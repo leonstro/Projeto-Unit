@@ -1,0 +1,41 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navBar</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <button onclick="toggleSidebar()" class="botao">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </button>
+    <div class="logo">
+      <img class="ecoart" src="./Logoo.png" alt="logo">
+    </div>
+    <div class="navegar">
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a href="#">Quem somos</a>
+    </div>
+    <div class="navegar2" id="navegar2">
+      <button onclick="toggleSidebar()" class="botao">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+</svg></button>
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a href="#">Quem somos</a>
+    </div>
+  </div>
+  <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+    <h1>EcoArt</h1>
+  </div>
+ 
+  <script src="./script.js"></script> 
+</body>
+</html>
