@@ -1,88 +1,178 @@
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>navBar</title>
-  <link rel="stylesheet" href="./style.css">
-  
-</head>
-<body>
-  <div class="header" id="header">
-    <button onclick="toggleSidebar()" class="botao">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-      </svg>
-    </button>
-    <div class="logo">
-      <img class="ecoart" src="./Logoo.png" alt="logo">
-    </div>
-    <div class="navegar">
-      <a href="#" class="ativar">Home</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-      <a href="#">Quem somos</a>
-    </div>
-    <div class="navegar2" id="navegar2">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/Projeto/css/home.css" />
+  </head>
+  <body>
+    <nav class="header" id="header">
       <button onclick="toggleSidebar()" class="botao">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-</svg></button>
-      <a href="#" class="ativar">Home</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-      <a href="#">Quem somos</a>
-    </div>
-  </div>
-  <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
-    <div class="slider">
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <input type="radio" name="radio-btn" id="radio5">
-  
-        <div class="slide first">
-          <img src="/carrossel/imagens/quinta.jpeg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/carrossel/imagens/sexta.jpeg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/carrossel/imagens/sabado.jpeg" alt="">
-        
-        </div>
-        <div class="slide">
-          <img src="/carrossel/imagens/domingo.jpeg" alt="">
-      
-        </div>
-        <div class="slide">
-          <img src="/carrossel/imagens/segunda.jpeg" alt="">
-        
-        </div>
-        
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn5"></div>
-        </div>
-  
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+      <div class="logo">
+        <img class="ecoart" src="./Logoo.png" alt="logo" />
       </div>
-  
-      <div class="manual-navigation">
-        <label class="manual-btn" for="radio1"></label>
-        <label class="manual-btn" for="radio2"></label>
-        <label class="manual-btn" for="radio3"></label>
-        <label class="manual-btn" for="radio4"></label>
-        <label class="manual-btn" for="radio5"></label>
+      <div class="navegar">
+        <a href="#" class="ativar">Home</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+        <a href="#">Quem somos</a>
       </div>
-  
+      <div class="navegar2" id="navegar2">
+        <button onclick="toggleSidebar()" class="botao">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </button>
+        <a href="#" class="ativar">Home</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+        <a href="#">Quem somos</a>
+      </div>
+    </nav>
+
+    <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+      <!-- carrossel -->
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <input type="radio" name="radio-btn" id="radio5" />
+
+          <div class="slide first">
+            <img src="/carrossel/imagens/quinta.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/carrossel/imagens/sexta.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/carrossel/imagens/sabado.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/carrossel/imagens/domingo.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/carrossel/imagens/segunda.jpeg" alt="" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+        </div>
+
+        <div class="manual-navigation">
+          <label class="manual-btn" for="radio1"></label>
+          <label class="manual-btn" for="radio2"></label>
+          <label class="manual-btn" for="radio3"></label>
+          <label class="manual-btn" for="radio4"></label>
+          <label class="manual-btn" for="radio5"></label>
+        </div>
+      </div>
+      <!-- body -->
+      <section class="container">
+        <div class="item1">
+          <p>CASA</p>
+          <img src="" alt="" />
+          <button class="pdtEspc">Mostrar mais</button>
+        </div>
+
+        <div class="item1">
+          <p>CASA</p>
+          <img src="" alt="" />
+          <button class="pdtEspc">Mostrar mais</button>
+        </div>
+
+        <div class="item1">
+          <p>CASA</p>
+          <img src="" alt="" />
+          <button class="pdtEspc">Mostrar mais</button>
+        </div>
+      </section>
+
+      <section class="ofertasDia">
+        <div class="itm1">
+          <p>OFERTA DO DIA</p>
+        </div>
+
+        <div class="itm2">
+          <p>OFERTA DO DIA</p>
+          <p>OFERTA DO DIA</p>
+          <p>OFERTA DO DIA</p>
+        </div>
+      </section>
+
+
+      <section class="ad">
+        <p class="adTxt"> ABRACE UMA ÁRVORE</p>
+      </section>
+
+      <section class="pdtHorizontal">
+        <p class="informamos">LISTINHA DE PRODUTO</p>
+
+        <div class="pdts">
+          <p> PRODUTO </p>
+          <p> PRODUTO </p>
+          <p> PRODUTO </p>
+          <p> PRODUTO </p>
+        </div>
+      </section>
+
+      <section class="pdts4">
+        <div class="item">
+          <p> carro automotor</p>
+        </div>
+
+        <div class="item">
+          <p> carro automotor</p>
+        </div>
+
+        <div class="item">
+          <p> carro automotor</p>
+        </div>
+
+        <div class="item">
+          <p> carro automotor</p>
+        </div>
+      </section>
+
     </div>
-  </div>
-  <link rel="stylesheet" href="/carrossel/carrossel.css">
-  <script src="/carrossel/carrossel.js"></script>
-  <script src="./script.js"></script> 
-</body>
+
+
+    <footer>
+      <p>footer</p>
+    </footer>
+
+    <link rel="stylesheet" href="/carrossel/carrossel.css" />
+    <script src="/carrossel/carrossel.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

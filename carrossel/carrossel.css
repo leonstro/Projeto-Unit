@@ -2,8 +2,9 @@
 .slider{
   margin: -60 auto;
   width: 1500px;
-  height: 300px;
+  height: 700px;
   overflow: hidden;
+  
 }
 .slides{
   width: 400%;
@@ -20,6 +21,8 @@
 }
 .slide img{
   width: 1500px;
+  
+
 }
 .manual-navigation{
   position: absolute;

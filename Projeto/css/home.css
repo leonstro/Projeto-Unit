@@ -1,0 +1,94 @@
+.container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.item1 {
+    display: grid;
+    width: 182px;
+    height: 214px;
+    color: red;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(0, 136, 255);
+    border: 2px solid #F0FFF0;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    border-style: none;
+}
+
+.pdtEspc {
+    padding: 5px 20px 5px 20px;
+    max-height: 25px;
+    align-self: self-end;
+    justify-self: center;
+}
+
+.ofertasDia {
+    margin-top: 25px;
+    grid-template-columns: 400px 900px;
+    gap: 30px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9999;
+}
+    
+
+.itm1 {
+    height: 320px;
+    width: 400px;
+    background-color: blueviolet;
+    border: 2px solid #F0FFF0;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    border-style: none;
+}
+
+.itm2 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.ad {
+    margin-top: 80px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+
+.adTxt {
+    font-size: 8rem;
+}
+
+.pdtHorizontal {
+    margin: 60px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.pdts {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 30px;
+}
+
+.informamos {
+    padding-bottom: 60px;
+    justify-self: start;
+}
+
+.pdts4 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-items: center;
+    justify-content: center;
+}
