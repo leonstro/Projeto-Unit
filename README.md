@@ -1,2 +1,2 @@
 # Projeto EcoArt
-Fiz navbar, sidebar e carrossel. Falta só todo o resto
+Fiz navbar, sidebar, carrossel, tela de login e cadastro.  Falta só todo o resto kkkkkkk....
