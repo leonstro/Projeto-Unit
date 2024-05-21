@@ -58,6 +58,16 @@ body{
   z-index: 2;
   
 }
+
+.navegar2 a{
+  background: #567D4C;
+  transition: .5s;
+}
+
+.navegar2 a:hover{
+  background: #733F2F;
+ transition: 0s;
+}
 .header{
   background-color: var(--color-white);
   box-shadow: 1px 1px 4px var(--color-dark4);
@@ -105,6 +115,11 @@ justify-content: space-between;
 }
 
 .navegar a{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navegar2 a{
   padding: 10px;
   border-radius: 10px;
 }
