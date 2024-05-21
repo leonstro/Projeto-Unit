@@ -4,6 +4,7 @@
   min-height: 120px;
   align-items: center;
   justify-content: center;
+  z-index: -2;
 }
 
 .container-images {
@@ -12,7 +13,7 @@
   align-items: center;
   justify-content: center;
   width: 1900px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .slider {
@@ -21,6 +22,7 @@
   position: absolute;
   width: 1864px;
   border-radius: 10px;
+  z-index: -2;
   
   
 }
@@ -38,19 +40,12 @@
 }
 
 .button-esquerdo, .button-direito{
-  opacity: 0;
-}
-
-.button-esquerdo:hover , .button-direito:hover{
   opacity: 1;
-  transition: 1s;
 }
-
-
 
 #prev-button img, #next-button img {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
 }
 
 #prev-button {

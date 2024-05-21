@@ -35,7 +35,44 @@
       </div>
       <div class="navegar3">
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá, Leon</i></a>
+        <span class="dropdown">
+           <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá, Leon</i></a>
+        </span>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="profile">
+            <a href="#"><i class="fa-solid fa-circle-user user-profile"></i>
+              </ion-icon>
+            </a>
+            <p>Leon de França</p>
+          </li>
+          <hr>
+          <li>
+            <a href="#">
+              <ion-icon name="bag-outline"></ion-icon>
+              Seus Pedidos
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="settings-outline"></ion-icon>
+              Configurações
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="help-circle-outline"></ion-icon>
+              Ajuda
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="log-out-outline"></ion-icon>
+              Sair
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="navegar2" id="navegar2">
         <button onclick="toggleSidebar()" class="botao">
@@ -64,10 +101,10 @@
       <div class="container-slider">
         <button class="button-esquerdo" id="prev-button"><img src="/carrossel/imagens/arrow.png" alt="prev-button"></button>
         <div class="container-images">
-          <img src="/carrossel/imagens/quinta.jpeg" alt="girl" class="slider on">
-          <img src="/carrossel/imagens/sexta.jpeg" alt="girl" class="slider">
-          <img src="/carrossel/imagens/sabado.jpeg" alt="girl" class="slider">
-          <img src="/carrossel/imagens/domingo.jpeg" alt="girl" class="slider">
+          <img src="/carrossel/imagens/jardinagem1.jpg" alt="girl" class="slider on">
+          <img src="/carrossel/imagens/ecobag2.PNG" alt="girl" class="slider">
+          <img src="/carrossel/imagens/jardinagem2.jpg" alt="girl" class="slider">
+          <img src="/carrossel/imagens/eco.jpg" alt="girl" class="slider">
           
         </div>
         <button class="button-direito" id="next-button"><img src="/carrossel/imagens/arrow.png" alt="next-button"></button>
@@ -147,6 +184,8 @@
     </footer>
 
     <link rel="stylesheet" href="/carrossel/carrossel.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="/carrossel/carrossel.js"></script>
     <script src="./script.js"></script>
   </body>

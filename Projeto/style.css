@@ -30,6 +30,16 @@ body{
   align-items: center;
 }
 
+.navegar a{
+  background: var(--color-white);
+  transition: .5s;
+}
+
+.navegar a:hover{
+  background: #733F2F;
+ transition: 0s;
+}
+
 .user{
   width: 30px;
 }
@@ -94,8 +104,7 @@ justify-content: space-between;
   
 }
 
-.ativar{
-  background-color: var(--color-dark3);
+.navegar a{
   padding: 10px;
   border-radius: 10px;
 }
@@ -118,3 +127,83 @@ justify-content: space-between;
   top {margin-left: -10vw;}
 }
 
+.header .menu{
+  position: absolute;
+  top: calc(5% + 30px);
+  right: 40px;
+  width: 205px;
+  min-height: 100px;
+  background-color:var(--color-white) ;
+  box-shadow: 1px 1px 4px var(--color-dark4);
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.header .menu.ativo{
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .menu::before{
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 35px;
+  width: 20px;
+  height: 20px;
+  background:#fff;
+  box-shadow: 1px 1px 4px var(--color-dark4);
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.header .menu ul{
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  list-style: none;
+}
+
+.header .menu ul li{
+  padding: 15px 20px;
+  background: #fff;
+  transition: .5s;
+}
+
+.header .menu ul li:hover{
+ background: #f5f5f5;
+ transition: 0s;
+}
+
+.header .menu ul li a{
+  text-decoration: none;
+  color: #733F2F;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .menu ul li a ion-icon{
+  font-size: 1.25rem;
+  color: #567D4C;
+}
+
+.user-profile{
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  color: #567D4C;
+  position: relative;
+  right: 8px;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile p{
+  color: #733F2F;
+  
+}

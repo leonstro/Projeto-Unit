@@ -27,3 +27,11 @@ function closeSidebar()
     toggleSidebar();
   }
 }
+
+const perfil = document.querySelector('.dropdown');
+const menu = document.querySelector('.menu');
+
+perfil.onclick = () => {
+  menu.classList.toggle('ativo');
+}
+  
