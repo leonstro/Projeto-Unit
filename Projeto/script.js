@@ -3,6 +3,16 @@ var navegar2 = document.getElementById('navegar2');
 var content = document.getElementById('content');
 var showSidebar = false;
 
+// Rotas
+// function login() {
+//   window.location.href = "/projeto/index.html";
+// } 
+
+function logout(){
+  window.location.href = "/projeto/telas/login.html";
+}
+
+
 function toggleSidebar()
 {
   showSidebar = !showSidebar
