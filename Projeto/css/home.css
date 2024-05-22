@@ -1,17 +1,28 @@
 .container {
-    margin-top: 10px;
+    margin-top: 120px;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 300px 300px 300px 300px;
     justify-items: center;
     justify-content: center;
     position: relative;
     z-index: -1;
+    gap: 50px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    gap: 50px;
 }
 
 .item1 {
     display: grid;
-    width: 182px;
-    height: 214px;
+    width: 300px;
+    height: 250px;
     color: red;
     margin: 10px;
     padding: 10px;
@@ -28,18 +39,46 @@
     align-self: self-end;
     justify-self: center;
 }
-
-.ofertasDia {
-    margin-top: 25px;
-    grid-template-columns: 400px 900px;
-    gap: 30px;
-    display: grid;
-    justify-items: center;
-    justify-content: center;
+/* mini carrossel */
+.miniCarrossel {
+    margin-top: 30px;
     position: relative;
-    z-index: 9999;
+    padding: 15px;
+    max-width: 840px;
+    margin: 0 auto;
 }
-    
+
+.gallery-wrapper {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    color: rgb(218, 60, 60);
+    cursor: pointer;
+    border: none;
+    background-color: transparent; 
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+}
 
 .itm1 {
     height: 320px;
@@ -57,6 +96,7 @@
 }
 
 .ad {
+    background-color: gainsboro;
     margin-top: 80px;
     display: grid;
     justify-items: center;
@@ -67,28 +107,9 @@
     font-size: 8rem;
 }
 
-.pdtHorizontal {
-    margin: 60px;
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    background-color: gainsboro;
-}
 
-.pdts {
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    gap: 30px;
-}
 
 .informamos {
     padding-bottom: 60px;
     justify-self: start;
-}
-
-.pdts4 {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    justify-items: center;
-    justify-content: center;
 }

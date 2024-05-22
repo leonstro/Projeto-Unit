@@ -32,7 +32,7 @@ body{
 
 .navegar a{
   background: var(--color-white);
-  transition: .5s;
+  transition: 0s;
 }
 
 .navegar a:hover{
@@ -126,7 +126,7 @@ justify-content: space-between;
 .content{
   text-align: center;
   padding-top: 5em;
-  height: 200vh;
+  height: 300vh;
   transition: 1s;
   color: black;
 }
