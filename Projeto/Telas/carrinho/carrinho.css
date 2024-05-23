@@ -1,3 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background: #f6f6f6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
   background: #fff;
+  padding: 0 30px 30px;
+}
+main .page-title {
+  font-size: 40px;
+  padding: 50px 0;
+  text-align: center;
+  color: #567D4C;
+}
+main .content {
+  display: flex;
+}
+main .content section {
+  flex: 1;
+}
+main .content aside {
+  background: #fff;
+  min-width: 250px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead tr {
+  border-bottom: 3px solid #eee;
+}
+table thead tr th {
+  text-align: left;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #A1D1A3;
+}
+table tbody tr {
+  border-bottom: 3px solid #eee;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table tbody tr td {
+  padding: 30px 0;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+.product img {
+  width: 100px;
+  height: 120px;
+  border-radius: 6px;
+}
+.product .info {
+  margin-left: 20px;
+}
+.product .info .name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.product .info .category {
+  color: #666;
+}
+
+.qty {
+  background: #eee;
+  display: inline-flex;
+  padding: 0px 0px;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+}
+.qty span {
+  margin: 0 10px;
+}
+.qty button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+}
+.qty button:hover {
+  background: #ddd;
+}
+
+.remove {
+  background: #eee;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.remove:hover {
+  background: #ddd;
+}
+
+aside {
+  margin-left: 30px;
+}
+aside .box {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background: #eee;
+  color: #222;
+}
+aside .box header {
+  padding: 15px 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+aside .box .info {
+  padding: 20px;
+  font-size: 16px;
+}
+aside .box .info > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+}
+aside .box .info > div:last-child {
+  margin: 0;
+}
+aside .box .info button {
+  color: #34aa17;
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+aside .box footer {
+  padding: 15px 20px;
+  background: #ddd;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+aside > button {
+  border: 0;
+  padding: 15px 0;
+  color: #fff;
+  background: #567D4C;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+aside > button:hover {
+  background: #28a745;
 }/*# sourceMappingURL=carrinho.css.map */
