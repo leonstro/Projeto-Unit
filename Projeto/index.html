@@ -1,104 +1,89 @@
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <script src="https://kit.fontawesome.com/3ba4c661d9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="/Projeto/css/home.css" />
-  </head>
-  <body>
-    <nav class="header" id="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <script src="https://kit.fontawesome.com/3ba4c661d9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/Projeto/css/home.css" />
+  <link rel="stylesheet" href="/Projeto/css/navbar.css">
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="header" id="header">
+    <button onclick="toggleSidebar()" class="botao">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+    </button>
+    <div class="logo">
+      <img class="ecoart" src="/Projeto/Imgs/Logoo (2).png" alt="logo" />
+    </div>
+    <div class="navegar">
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a href="#">Quem somos</a>
+    </div>
+    <div class="navegar3">
+      <a href="#" onclick="car()"><i class="fa-solid fa-cart-shopping"></i></a>
+      <span class="dropdown">
+        <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá, Leon</i></a>
+      </span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="profile">
+          <a href="#"><i class="fa-solid fa-circle-user user-profile"></i>
+            </ion-icon>
+          </a>
+          <p>Leon de França</p>
+        </li>
+        <hr>
+        <li>
+          <a href="#">
+            <ion-icon name="bag-outline"></ion-icon>
+            Seus Pedidos
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="settings-outline"></ion-icon>
+            Configurações
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="help-circle-outline"></ion-icon>
+            Ajuda
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="logout()">
+            <ion-icon name="log-out-outline"></ion-icon>
+            Sair
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navegar2" id="navegar2">
       <button onclick="toggleSidebar()" class="botao">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
         </svg>
       </button>
-      <div class="logo">
-        <img class="ecoart" src="./Logoo (2).png" alt="logo" />
-      </div>
-      <div class="navegar">
-        <a href="#" class="ativar">Home</a>
-        <a href="#">Serviços</a>
-        <a href="#">Contato</a>
-        <a href="#">Quem somos</a>
-      </div>
-      <div class="navegar3">
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        <span class="dropdown">
-           <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá, Leon</i></a>
-        </span>
-      </div>
-      <div class="menu">
-        <ul>
-          <li class="profile">
-            <a href="#"><i class="fa-solid fa-circle-user user-profile"></i>
-              </ion-icon>
-            </a>
-            <p>Leon de França</p>
-          </li>
-          <hr>
-          <li>
-            <a href="#">
-              <ion-icon name="bag-outline"></ion-icon>
-              Seus Pedidos
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <ion-icon name="settings-outline"></ion-icon>
-              Configurações
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <ion-icon name="help-circle-outline"></ion-icon>
-              Ajuda
-            </a>
-          </li>
-          <li>
-            <a href="#" onclick="logout()">
-              <ion-icon name="log-out-outline"></ion-icon>
-              Sair
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="navegar2" id="navegar2">
-        <button onclick="toggleSidebar()" class="botao">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            class="bi bi-x"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
-            />
-          </svg>
-        </button>
-        <a href="#" class="ativar">Home</a>
-        <a href="#">Serviços</a>
-        <a href="#">Contato</a>
-        <a href="#">Quem somos</a>
-      </div>
-    </nav>
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a href="#">Quem somos</a>
+    </div>
+  </nav>
 
-    <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
-      <!-- carrossel -->
-      <!-- <div class="container-slider">
+  <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+    <!-- carrossel -->
+    <div class="container-slider">
         <button class="button-esquerdo" id="prev-button"><img src="/carrossel/imagens/arrow.png" alt="prev-button"></button>
         <div class="container-images">
           <img src="/carrossel/imagens/jardinagem1.jpg" alt="girl" class="slider on">
@@ -108,96 +93,97 @@
           
         </div>
         <button class="button-direito" id="next-button"><img src="/carrossel/imagens/arrow.png" alt="next-button"></button>
-      </div> -->
-      <!-- body -->
-      <section class="container">
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
+      </div>
+    <!-- body -->
+    <section class="container">
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+    </section>
+
+    <section class="container2">
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+
+      <div class="item1">
+        <p>CASA</p>
+        <img src="" alt="" />
+        <button class="pdtEspc">Mostrar mais</button>
+      </div>
+    </section>
+
+    <section class="ad">
+      <p class="adTxt"> ABRACE UMA ÁRVORE</p>
+    </section>
+
+    <section class="miniCarrossel">
+      <button class="arrow-left control" aria-label="Previous image">
+        {
+      </button>
+
+      <button class="arrow-right control" aria-label="Next image">
+        }
+      </button>
+      <div class="gallery-wrapper">
+        <div class="gallery">
+          <img src="https://source.unsplash.com/random/250x250/" alt="" class="item current-item">
+          <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
+          <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
+          <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
+
+
         </div>
-
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
-        </div>
-
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
-        </div>
-
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
-        </div>
-      </section>
-
-      <section class="container2">
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
-        </div>
-
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
-        </div>
-
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
-        </div>
-
-        <div class="item1">
-          <p>CASA</p>
-          <img src="" alt="" />
-          <button class="pdtEspc">Mostrar mais</button>
-        </div>
-      </section>
-
-      <section class="ad">
-        <p class="adTxt"> ABRACE UMA ÁRVORE</p>
-      </section>
-
-      <section class="miniCarrossel">
-        <button class="arrow-left control" aria-label="Previous image">
-          {
-        </button>
-
-        <button class="arrow-right control" aria-label="Next image">
-          }
-        </button>
-        <div class="gallery-wrapper">
-          <div class="gallery">
-            <img src="https://source.unsplash.com/random/250x250/" alt="" class="item current-item">
-            <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
-            <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
-            <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
+      </div>
+    </section>
 
 
-          </div>
-        </div>
-      </section>
+  </div>
 
 
-    </div>
+  <footer>
+    <p>footer</p>
+  </footer>
 
+  <link rel="stylesheet" href="/carrossel/carrossel.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="/carrossel/carrossel.js"></script>
+  <script src="/Projeto/Js/script.js"></script>
+</body>
 
-    <footer>
-      <p>footer</p>
-    </footer>
-
-    <link rel="stylesheet" href="/carrossel/carrossel.css" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/carrossel/carrossel.js"></script>
-    <script src="./script.js"></script>
-  </body>
 </html>
