@@ -1,0 +1,140 @@
+:root{
+  --first-color:#A1D1A3;
+  --white-color: #ffff;
+  --dark-color:#567D4C;
+  --dark-color-lighten:#733F2F;
+
+  --body-font:'Poppins', sans-serif;
+  --h1-font-size:1.5rem;
+  --h2-font-size:1.25rem;
+  --normal-font-size:1rem;
+  --small-font-size:.875rem;
+
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.h1,.p{
+  margin: 0;
+}
+
+.a{
+  text-decoration: none;
+}
+
+.img{
+  max-width: 100%;
+  height:auto ;
+margin-left: 14px;
+margin-top: -40px;
+
+}
+
+.principal{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color-lighten);
+}
+
+.card{
+  width: 290px;
+  height: 270px ;
+  background-color: var(--dark-color);
+  border-radius: 1rem;
+  padding: 3.5rem 2rem  ;
+  color: var(--white-color);
+  overflow: hidden;
+  
+}
+
+.card-img{
+  position: absolute;
+  width: 260px;
+  filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4) );
+  
+}
+
+.card-data{
+  transform: translateY(17.2rem);
+  text-align: center;
+  justify-content: center;
+}
+
+.card-title{
+  font-size: var(--h1-font-size);
+  color: #733F2F;
+  margin-bottom: .5rem;
+  margin-top: -40px;
+  
+}
+
+.card-preci{
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.card-description{
+  font-size: var(--small-font-size);
+  text-align: initial;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+
+}
+
+.card-button{
+  display: block;
+  width: max-content;
+  padding: 1.125rem 2rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border-radius: .5rem;
+  font-weight: 600;
+  transition: .2s;
+  opacity: 0;
+}
+
+.card-button:hover{
+  box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
+}
+
+.card-img,
+.card-data,
+.card-title,
+.card-preci,
+.card-description{
+  transition: .5s;
+}
+
+.card:hover .card-img{
+  transform: translate(-1.5rem, -11.5rem);
+}
+.card:hover .card-data{
+  transform: translateY(4.8rem);
+}
+
+.card:hover .card-title{
+  transform: translateX(-2.3rem);
+  margin-bottom: 0;
+}
+
+.card:hover .card-preci{
+  transform: translateX(-6.8rem);
+}
+
+.card:hover .card-description,
+.card:hover .card-button{
+  transition-delay: .2s;
+  opacity: 1;
+}
+
+
+
