@@ -4,7 +4,7 @@
     z-index: 2;
 }
 
-.container {
+.containerP {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
@@ -114,9 +114,49 @@
     font-size: 8rem;
 }
 
-
-
 .informamos {
     padding-bottom: 60px;
     justify-self: start;
+}
+
+/* footer */
+.footer {
+    background-image: linear-gradient(blueviolet, pink);
+    display: grid;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.2rem;
+}
+
+.extras {
+    text-align: left;
+    margin-top: 2.85rem;
+    display: flex;
+    gap: 115px;
+    margin-bottom: 50px;
+}
+
+.credits {
+    justify-self: end;
+    display: flex;
+    gap: 645px;
+    margin-top: 40px;
+}
+
+hr {
+    width: 1386px;
+    background-color: green;
+    height: 1.2px;
+    border: none;
+}
+
+.footer img {
+    justify-self: end;
+    max-width: 350px;
+}
+
+ul {
+    list-style-type: none;
 }

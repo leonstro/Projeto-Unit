@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/Projeto/css/navbar.css">
   <link rel="stylesheet" href="/Cards dos produtos/card.css">
   <link rel="stylesheet" href="/Cards dos produtos/cards principais/produtos.css">
+  <link rel="stylesheet" href="css/bootstrap.css">  
 </head>
 
 <body>
@@ -27,12 +28,20 @@
       <a href="#" class="ativar">Home</a>
       <a href="#">Serviços</a>
       <a href="#">Contato</a>
-      <a href="#">Quem somos</a>
+      <a href="#">Quem⠀somos</a> <!-- aq tem um caractere invisível -->>
     </div>
+
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
     <div class="navegar3">
       <a href="#" onclick="car()"><i class="fa-solid fa-cart-shopping"></i></a>
       <span class="dropdown">
-        <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá, Leon</i></a>
+        <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá,⠀Leon</i></a>
       </span>
     </div>
     <div class="menu">
@@ -81,9 +90,10 @@
       <a href="#">Contato</a>
       <a href="#">Quem somos</a>
     </div>
+    <p>⠀⠀⠀⠀⠀</p>
   </nav>
-  
   <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+
     <!-- carrossel -->
     <div class="container-slider">
       <button class="button-esquerdo" id="prev-button"><img src="/carrossel/imagens/arrow.png" alt="prev-button"></button>
@@ -92,147 +102,181 @@
         <img src="/carrossel/imagens/ecobag2.PNG" alt="girl" class="slider">
         <img src="/carrossel/imagens/jardinagem2.jpg" alt="girl" class="slider">
         <img src="/carrossel/imagens/eco.jpg" alt="girl" class="slider">
-        
+
       </div>
-          <button class="button-direito" id="next-button"><img src="/carrossel/imagens/arrow.png" alt="next-button"></button>
+      <button class="button-direito" id="next-button"><img src="/carrossel/imagens/arrow.png" alt="next-button"></button>
+    </div>
+    <!-- body -->
+    <div class="cards1">
+      <div class="circulo" style="--clr:#733F2F;">
+        <img src="/Cards dos produtos/cards principais/imgs/bolsa.png" class="icone1">
+      </div>
+      <div class="conteudos1">
+        <h2>EcoBags</h2>
+        <p>Aqui, você encontrará uma grande variedade de ecobags ecológicas, duráveis e estilosas, perfeitas para suas compras diárias. Escolha sustentabilidade com as nossas ecobags!</p>
+        <a href="#">Explorar Mais!</a>
+      </div>
+      <img src="/Cards dos produtos/cards principais/imgs/ecobagg2.png" class="produtos1">
+    </div>
+
+
+
+    <section class="containerP">
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title">EcoBag Snoopy</h1>
+          <span class="cardGerais-preci">R$80,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button">Comprar</a>
         </div>
-        <!-- body -->
-        <div class="cards1">
-          <div class="circulo" style="--clr:#733F2F;">
-           <img src="/Cards dos produtos/cards principais/imgs/bolsa.png" class="icone1">
-          </div>
-          <div class="conteudos1">
-            <h2>EcoBags</h2>
-            <p>Aqui, você encontrará uma grande variedade de ecobags ecológicas, duráveis e estilosas, perfeitas para suas compras diárias. Escolha sustentabilidade com as nossas ecobags!</p>
-            <a href="#">Explorar Mais!</a>
-          </div>
-          <img src="/Cards dos produtos/cards principais/imgs/ecobagg2.png" class="produtos1">
+      </div>
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">EcoBag Snoopy</h1>
+          <span class="cardGerais-preci">R$80,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button">Comprar</a>
         </div>
+      </div>
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">EcoBag Snoopy</h1>
+          <span class="cardGerais-preci">R$80,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button">Comprar</a>
+        </div>
+      </div>
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">EcoBag Snoopy</h1>
+          <span class="cardGerais-preci">R$80,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button">Comprar</a>
+        </div>
+      </div>
+    </section>
 
-        
-        
-        <section class="container">
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-          
-          
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-          
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-          
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-        </section>
-        
-        <section class="container2">
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-          
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-          
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-          
-          <div class="card">
-            <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
-            <div class="card-data">
-              <h1 class="card-title h1">EcoBag Snoopy</h1>
-              <span class="card-preci">R$80,00</span>
-              <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-              <a href="#" class="card-button a">Comprar</a>
-            </div>
-          </div>
-        </section>
-        
-        <section class="ad">
-          <p class="adTxt"> ABRACE UMA ÁRVORE</p>
-        </section>
-        
-        <section class="miniCarrossel">
-          <button class="arrow-left control" aria-label="Previous image">
-            {
-            </button>
-            
-            <button class="arrow-right control" aria-label="Next image">
-            }
-          </button>
-          <div class="gallery-wrapper">
-            <div class="gallery">
-              <img src="https://source.unsplash.com/random/250x250/" alt="" class="item current-item">
-              <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
-              <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
-              <img src="https://source.unsplash.com/random/250x250/" alt="" class="item ">
-              
-              
-            </div>
-            </div>
-          </div>
-        </section>
-        
+    <section class="container2">
+      <div class="card">
+        <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="card-data">
+          <h1 class="card-title h1">EcoBag Snoopy</h1>
+          <span class="card-preci">R$80,00</span>
+          <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="card-button a">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="card-data">
+          <h1 class="card-title h1">EcoBag Snoopy</h1>
+          <span class="card-preci">R$80,00</span>
+          <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="card-button a">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="card-data">
+          <h1 class="card-title h1">EcoBag Snoopy</h1>
+          <span class="card-preci">R$80,00</span>
+          <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="card-button a">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="img card-img" src="/Cards dos produtos/imgs/ecobag-snoppy1.png" alt="">
+        <div class="card-data">
+          <h1 class="card-title h1">EcoBag Snoopy</h1>
+          <span class="card-preci">R$80,00</span>
+          <p class="card-description p">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="card-button a">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ad">
+      <p class="adTxt"> ABRACE UMA ÁRVORE</p>
+    </section>
 
 
+    <footer class="footer">
+      <hr>
+      <div class="extras">
+        <ul>
+          <li>
+            <div>
+              <p>Discover</p>
+              <p>Our Story</p>
+              <p>Our Charity </p>
+              <p>WorkOrganic</p>
+              <p>Certifications</p>
+              <p>The Green Beauty Loyalty Club</p>
+              <p>Free From</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <p>CUSTOMER SERVICE</p>
+              <p>Contact Us</p>
+              <p>Press Enquiries</p>
+              <p>TradeBecome an Ambassador</p>
+              <p>Subscription Products</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <p>CUSTOMER SERVICE</p>
+              <p>Contact Us</p>
+              <p>Press Enquiries</p>
+              <p>TradeBecome an Ambassador</p>
+              <p>Subscription Products</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <p>CUSTOMER SERVICE</p>
+              <p>Contact Us</p>
+              <p>Press Enquiries</p>
+              <p>TradeBecome an Ambassador</p>
+              <p>Subscription Products</p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-  <footer>
-    <p>footer</p>
-  </footer>
+      <img src="./Imgs/cartao.jpg" alt="">
 
-  <link rel="stylesheet" href="/carrossel/carrossel.css" />
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="/carrossel/carrossel.js"></script>
-  <script src="/Projeto/Js/script.js"></script>
+      <div class="credits">
+        <p class="copy">© Copyright 2024 Green People. All Rights Reserved.</p>
+        <p>Privacy PolicyTerms & Conditions</p>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="/carrossel/carrossel.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/carrossel/carrossel.js"></script>
+    <script src="/Projeto/Js/script.js"></script>
 </body>
 
 </html>
