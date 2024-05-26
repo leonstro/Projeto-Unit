@@ -1,12 +1,12 @@
 .container {
-    margin-top: 170px;
+    margin-top: 400px;
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     justify-items: center;
     justify-content: center;
     position: relative;
-    z-index: -1;
-    gap: 50px;
+    z-index: 2;
+    gap: 100px;
 }
 
 .container2 {
@@ -15,8 +15,9 @@
     justify-items: center;
     justify-content: center;
     position: relative;
-    z-index: -1;
-    gap: 50px;
+    z-index: 2;
+    gap: 100px;
+    margin-top: 120px;
 }
 
 .item1 {

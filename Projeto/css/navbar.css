@@ -19,12 +19,12 @@ nav {
 
 .navegar a{
   background: var(--color-white);
-  transition: 0s;
+  
 }
 
 .navegar a:hover{
   background: #733F2F;
- transition: 0s;
+ 
 }
 
 .user{
@@ -37,7 +37,7 @@ nav {
   display: flex;
   top: 0;
   background-color: #567D4C;
-  height: 100%;
+  height: 1000px;
   width: 18vw;
   padding: 1em;
   animation-duration: 0.2s;

@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #F0FFF0;
+
+}
+
+.card1{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+
+}
+
+.card1:hover{
+  width: 600px;
+  transition-delay: 0.3s;
+  
+}
+
+.card1 .circulo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card1 .circulo::before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  background: #F0FFF0;
+  border-radius: 50%;
+  border: 8px solid var(--clr);
+  filter:drop-shadow(0 0 10px var(--clr))
+  drop-shadow(0 0 60px var(--clr));
+  transition: 0.3s, background 0.3s;
+  transition-delay: .3s, 1s;
+}
+
+.card1:hover .circulo::before{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #A1D1A3;
+  transition-delay: .3s;
+ 
+}
+
+.card1 .circulo .icon1{
+  position: absolute;
+  width: 200px;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+
+
+}
+
+.card1:hover .circulo .icon1{
+  transform: scale(0);
+  transition-delay: 0s;
+
+}
+
+.card1 .produto1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0) rotate(315deg);
+  height: 300px;
+  transition: .3s ease-in-out;
+}
+
+.card1:hover .produto1{
+  top: 35%;
+  left: 79%;
+  height: 470px;
+  transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  transition-delay: .3s;
+
+}
+
+.card1 .conteudo1{
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.card1:hover .conteudo1{
+  opacity: 1;
+  visibility: visible;
+  left: 20px;
+  transition-delay: .3s;
+}
+
+
+.card1 .conteudo1 h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1rem;
+}
+
+.card1 .conteudo1 p{
+  color: #fff;
+  max-width: 300px;
+
+}
+
+.card1 .conteudo1 a{
+  color:#111 ;
+  background: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius:10px ;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+}
