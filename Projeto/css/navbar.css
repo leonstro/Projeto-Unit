@@ -9,7 +9,10 @@ nav {
   gap: 60px;
   z-index: 999;
 }
-
+hr{
+  width:206;
+ 
+}
 .header,
 .navegar{
   display: flex;
@@ -86,17 +89,25 @@ nav {
   font-weight: bold;
 }
 
+
 .navegar3{
   display: flex;
-  gap: 3em;
+  gap: 4.5em;
 }
 
 .fa-circle-user{
-  width: 30px;
+  position: relative;
+  right: 30px;
+  width: 0px;
+  
+}
+
+.fa-cart-shopping{
+  margin-left: -40;
 }
 
 .fa-circle-user, .fa-cart-shopping{
-  font-size: 25px;
+  font-size: 23px;
   
 }
 
@@ -130,8 +141,8 @@ nav {
 
 .header .menu{
   position: absolute;
-  top: calc(5% + 30px);
-  right: 40px;
+  top: calc(5% + 70px);
+  right: 100px;
   width: 205px;
   min-height: 100px;
   background-color:var(--color-white) ;
@@ -151,7 +162,7 @@ nav {
   content: '';
   position: absolute;
   top: -8px;
-  right: 35px;
+  right: 25px;
   width: 20px;
   height: 20px;
   background:#fff;
@@ -165,10 +176,13 @@ nav {
   flex-direction: column;
   background: var(--color-white);
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+
 .header .menu ul li{
-  padding: 15px 20px;
+  padding: 17px 20px;
   background: #fff;
   transition: .5s;
 }
@@ -202,7 +216,7 @@ nav {
 .profile{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 .profile p{
   color: #733F2F;
