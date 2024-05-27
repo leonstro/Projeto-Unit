@@ -5,17 +5,16 @@
 }
 
 .containerP {
-    margin-top: -500px;
+    margin-top: -240px;
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     justify-items: center;
     justify-content: center;
-    position: relative;
     z-index: 2;
     gap: 100px;
 }
 
-.container2 {
+.containerT {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     justify-items: center;
@@ -26,19 +25,6 @@
     margin-top: 120px;
 }
 
-.item1 {
-    display: grid;
-    width: 300px;
-    height: 250px;
-    color: red;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(0, 136, 255);
-    border: 2px solid #F0FFF0;
-    border-radius: 12px;
-    box-shadow: 1px 1px 4px #1c1c1c;
-    border-style: none;
-}
 
 .pdtEspc {
     padding: 5px 20px 5px 20px;

@@ -21,12 +21,18 @@ hr{
 }
 
 .navegar a{
-  background: var(--color-white);
+  background-image: linear-gradient(green,green);
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  background-position:left bottom 10 ;
+  transition: background-size 300ms;
+  
   
 }
 
 .navegar a:hover{
-  background: #733F2F;
+  background-size: 100% 1px;
+  color: #567D4C;
  
 }
 
@@ -46,17 +52,21 @@ hr{
   animation-duration: 0.2s;
   margin-left: -100vw;
   z-index: 2;
+ 
   
 }
 
 .navegar2 a{
-  background: #567D4C;
-  transition: .5s;
+  background-image: linear-gradient(white, white);
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  background-position:left bottom 10 ;
+  transition: background-size 200ms;
 }
 
 .navegar2 a:hover{
-  background: #733F2F;
- transition: 0s;
+  background-size: 100% 1px;
+  color: white;
 }
 .header{
   background-color: var(--color-white);
@@ -72,7 +82,6 @@ hr{
 .navegar a{
   text-decoration: none;
   color: var(--color-green);
-  transition: 1s;
   font-weight: bold;
 }
 .navegar2 a{

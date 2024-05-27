@@ -7,8 +7,8 @@
   --body-font:'Poppins', sans-serif;
   --h1-font-size:1.5rem;
   --h2-font-size:1.25rem;
-  --normal-font-size:1rem;
-  --small-font-size:.875rem;
+  --normal-font-size:2rem;
+  --small-font-size:0.99rem;
 
 }
 
@@ -44,11 +44,11 @@ margin-top: -40px;
 }
 
 .cardGerais {
-  width: 290px;
-  height: 270px ;
+  width: 300px;
+  height: 360px ;
   background-color: var(--dark-color);
   border-radius: 1rem;
-  padding: 3.5rem 2rem  ;
+  padding: 2.5rem 3rem  ;
   color: var(--white-color);
   overflow: hidden;
   
@@ -127,7 +127,7 @@ margin-top: -40px;
 }
 
 .cardGerais:hover .cardGerais-preci {
-  transform: translateX(-6.8rem);
+  transform: translateX(-6.2rem);
 }
 
 .cardGerais:hover .cardGerais-description,
@@ -135,6 +135,7 @@ margin-top: -40px;
   transition-delay: .2s;
   opacity: 1;
 }
+
 
 
 
