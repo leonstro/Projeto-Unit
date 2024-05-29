@@ -1,0 +1,160 @@
+body{
+  background-color: #F0FFF0;
+}
+.container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 85px);
+  gap: 100px;
+}
+
+.left-side{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.itens3{
+  align-self: flex-end;
+}
+
+.select-imagens{
+  max-width: 400px;
+}
+
+.select-imagens img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbnails{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 400px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.thumbnail img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right-side{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contennt{
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.right-side h6{
+  font-size: 15px;
+  color: #567D4C;
+  margin: 0;
+}
+
+.right-side h1{
+  margin: 0;
+  
+}
+.right-side p{
+  color: white;
+  font-size: 14px;
+  color: black;
+}
+
+.prices2{
+  display: flex;
+  flex-direction: column;
+}
+.price1{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.off{
+  font-size: 12px;
+  color: rgb(128, 128, 128);
+}
+
+.options1{
+  display: flex;
+  gap: 20px;
+}
+
+.amount{
+    background: #eee;
+    display: inline-flex;
+    padding: 0px 0px;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 35px;
+   
+    
+}
+
+.amount span{
+  font-size: 12px;
+  margin: 0 7px;
+}
+
+.amount button{
+  display: flex;
+  align-items: center;
+  background:transparent ;
+  border: 0;
+  padding: 20 30px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.amount button:hover{
+  background: #ddd;
+}
+
+.minus, .plus{
+  cursor: pointer;
+}
+
+.button5{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color:#567D4C ;
+  padding: 10px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+  font-size: 12px;
+  font-weight:700 ;
+  transition: 0.2s;
+}
+
+.button5:hover{
+  background-color: green;
+  transition: 0.3s;
+
+
+}
+.button5 img{
+  width: 14px;
+}
+
+
+
