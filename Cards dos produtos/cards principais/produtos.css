@@ -20,8 +20,8 @@
 }
 
 .centralize {
-  width: 1200px;
-  height: 800px ;
+  width: 1250px;
+  height: 500px ;
 }
 
 .cards1:hover{
@@ -344,7 +344,6 @@
   border-radius: 20px;
   background: #A1D1A3;
   transition-delay: .3s;
- 
 }
 
 .cards3 .circulo .icone1{

@@ -4,8 +4,19 @@
     z-index: 2;
 }
 
+.offerday {
+    font-size: 2.5rem;
+    padding-right: 1000px;
+    padding-bottom: 170px;
+}
+
+.containerGeral {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+
 .containerP {
-    margin-top: -240px;
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     justify-items: center;
@@ -89,15 +100,39 @@
 }
 
 .ad {
-    background-color: gainsboro;
     margin-top: 80px;
     display: grid;
     justify-items: center;
     justify-content: center;
 }
 
+.ad img {
+    width: 1000px;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.bestSelling {
+    display: grid;
+    justify-content: center;
+}
+
+.bestS {
+    justify-self: center;
+    background-color: #1c1c1c7a;
+    width: 1000px;
+    height: 200px;
+}
+
 .adTxt {
     font-size: 8rem;
+}
+
+.seeMore {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
 }
 
 .informamos {
