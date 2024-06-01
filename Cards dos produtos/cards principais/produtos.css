@@ -9,7 +9,19 @@
   border-radius: 20px;
   transition: 0.3s;
   transition-delay: 0.3s;
+  
+}
 
+.cardsPrincipais {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.centralize {
+  width: 1200px;
+  height: 800px ;
 }
 
 .cards1:hover{
