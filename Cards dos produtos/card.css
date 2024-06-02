@@ -28,10 +28,10 @@
 }
 
 .imge{
-  max-width: 100%;
+  max-width: 140px;
   height:auto ;
-margin-left: -135px;
-margin-top: -40px;
+margin-left: -70px;
+margin-top: 35px;
 
 }
 
@@ -44,8 +44,8 @@ margin-top: -40px;
 }
 
 .cardGerais {
-  width: 300px;
-  height: 360px ;
+  width: 290px;
+  height: 355px ;
   background-color: var(--dark-color);
   border-radius: 1rem;
   padding: 2.5rem 3rem  ;
@@ -62,7 +62,7 @@ margin-top: -40px;
 }
 
 .cardGerais-data{
-  transform: translateY(17.2rem);
+  transform: translateY(16.2rem);
   text-align: center;
   justify-content: center;
 }
@@ -71,7 +71,7 @@ margin-top: -40px;
   font-size: var(--h1-font-size);
   color: #733F2F;
   margin-bottom: .5rem;
-  margin-top: -40px;
+  margin-top: -15px;
   
 }
 
@@ -100,10 +100,16 @@ margin-top: -40px;
   font-weight: 600;
   transition: .2s;
   opacity: 0;
+ 
 }
 
 .cardGerais-button:hover{
   box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
+  background-color: green;
+  color: white;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .1s;
 }
 
 .cardGerais-imge,
@@ -115,19 +121,19 @@ margin-top: -40px;
 }
 
 .cardGerais:hover .cardGerais-imge{
-  transform: translate(-2.5rem, -11.5rem);
+  transform: translate(-2.5rem, -10rem);
 }
 .cardGerais:hover .cardGerais-data{
-  transform: translateY(4.8rem);
+  transform: translateY(3.8rem);
 }
 
 .cardGerais:hover .cardGerais-title{
-  transform: translateX(-2.3rem);
+  transform: translateX(-1.3rem);
   margin-bottom: 0;
 }
 
 .cardGerais:hover .cardGerais-preci {
-  transform: translateX(-6.2rem);
+  transform: translateX(-5.2rem);
 }
 
 .cardGerais:hover .cardGerais-description,

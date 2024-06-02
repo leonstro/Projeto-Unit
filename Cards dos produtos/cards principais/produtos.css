@@ -4,12 +4,10 @@
   height: 200px;
   left: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 20px;
   transition: 0.3s;
   transition-delay: 0.3s;
-  
+
 }
 
 .cardsPrincipais {
@@ -17,6 +15,7 @@
   grid-template-columns: 300px 300px 300px;
   justify-items: center;
   justify-content: center;
+  
 }
 
 .centralize {
@@ -104,6 +103,7 @@
 .cards1 .conteudos1{
   position: absolute;
   left: 20%;
+  top: 8%;
   width: 180%;
   display: flex;
   flex-direction: column;
@@ -145,6 +145,12 @@
   font-weight: 300;
   display: inline-block;
   width: fit-content;
+}
+
+.cards1 .conteudos1 a:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .2s;
 }
  /* card2 aqui */
 
@@ -286,6 +292,12 @@
   width: fit-content;
 }
 
+.cards2 .conteudos1 a:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .2s;
+}
+
 /* card3 aqui */
 
 .cards3{
@@ -423,4 +435,10 @@
   font-weight: 300;
   display: inline-block;
   width: fit-content;
+}
+
+.cards3 .conteudos1 a:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .2s;
 }

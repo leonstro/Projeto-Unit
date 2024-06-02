@@ -6,8 +6,8 @@
 
 .offerday {
     font-size: 2.5rem;
-    padding-right: 1000px;
-    padding-bottom: 170px;
+    padding-bottom: 85px;
+    margin-top: 30px;
 }
 
 .containerGeral {
@@ -180,4 +180,9 @@ hr {
 
 ul {
     list-style-type: none;
+}
+
+.quem{
+    position: relative;
+    bottom: 1.5px;
 }
