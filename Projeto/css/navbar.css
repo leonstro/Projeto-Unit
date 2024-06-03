@@ -102,6 +102,12 @@ hr{
 .navegar3{
   display: flex;
   gap: 4.5em;
+  transition: 0s;
+}
+
+.navegar3 a:hover{
+  color: green;
+  transition: 0.1s;
 }
 
 .fa-circle-user{
@@ -113,7 +119,10 @@ hr{
 
 .fa-cart-shopping{
   margin-left: -40;
+  transition: 0s;
 }
+
+
 
 .fa-circle-user, .fa-cart-shopping{
   font-size: 23px;
