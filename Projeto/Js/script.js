@@ -16,6 +16,10 @@ function car() {
   window.location.href = "/projeto/telas/carrinho.html";
 }
 
+function prdPrincipal() {
+  window.location.href = "/projeto/telas/prdprincipal.html";
+}
+
 
 //mini carrossel
 const controls = document.querySelectorAll('.control');
