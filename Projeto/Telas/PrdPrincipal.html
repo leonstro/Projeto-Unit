@@ -1,70 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produto Principal</title>
-  <link rel="stylesheet" href="/Projeto/css/PrdPrincipal.css">
+  <link rel="stylesheet" href="../css/all.css">
+  <script src="https://kit.fontawesome.com/3ba4c661d9.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="/Projeto/css/PrdPrincipal.css"> -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="/Projeto/Js/PrdPrincipal.js" defer></script>
 </head>
+
 <body>
-  <main>
-    <section>
-      <div class="container3">
-        <div class="left-side">
-          <div class="itens3">
-            <div id="container" class="select-imagens">
-              <img id="img" src="/Projeto/Imgs/ecobag borboletab.jpg" alt="">
-            </div>
-            <div class="thumbnails">
-              <div class="thumbnail">
-                <img src="/Projeto/Imgs/ecobag borboletab.jpg" alt=""> 
-              </div>
+  <nav class="header" id="header">
+    <button onclick="toggleSidebar()" class="botao">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+    </button>
+    <div class="logo">
+      <img class="ecoart" src="/Projeto/Imgs/Logoo (2).png" alt="logo" />
+    </div>
+    <div class="navegar">
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a class="quem" href="#">Quem⠀somos</a> <!-- aq tem um caractere invisível -->
+    </div>
 
-              <div class="thumbnail">
-                <img src="/Projeto/Imgs/borboleta2.jpg" alt=""> 
-              </div>
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
 
-              <div class="thumbnail">
-                <img src="/Projeto/Imgs/borboleta3.jpg" alt=""> 
+    <div class="navegar3">
+      <a href="#" onclick="car()"><i class="fa-solid fa-cart-shopping"></i></a>
+      <span class="dropdown">
+        <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá,⠀Leon</i></a>
+      </span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="profile">
+          <a href="#"><i class="fa-solid fa-circle-user user-profile"></i>
+            </ion-icon>
+          </a>
+          <p>Leon de França</p>
+        </li>
+        <hr>
+        <li>
+          <a href="#">
+            <ion-icon name="bag-outline"></ion-icon>
+            Seus Pedidos
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="settings-outline"></ion-icon>
+            Configurações
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="help-circle-outline"></ion-icon>
+            Ajuda
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="logout()">
+            <ion-icon name="log-out-outline"></ion-icon>
+            Sair
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navegar2" id="navegar2">
+      <button onclick="toggleSidebar()" class="botao">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+        </svg>
+      </button>
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a href="#">Quem somos</a>
+    </div>
+    <p></p>
+  </nav>
+  <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+      <section>
+        <div class="container3">
+          <div class="left-side">
+            <div class="itens3">
+              <div id="container" class="select-imagens">
+                <img id="img" src="/Projeto/Imgs/ecobag borboletab.jpg" alt="">
               </div>
-
-              <div class="thumbnail">
-                <img src="/Projeto/Imgs/borboleta5.jpg" alt=""> 
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="right-side">
-          <div class="contennt">
-            <h6>EcoArt</h6>
-            <h1>Ecobag Mudanças Borboletas</h1>
-            <p style="font-size: 1.3rem;">Esta ecobag, com 35x35 cm e alça de 30 cm, é mais do que uma sacola; é uma afirmação de estilo consciente e sustentável. Feita de algodão cru, é ecológica, duradoura, macia e resistente, garantindo conforto e confiança ao carregar suas coisas, reforçando nosso compromisso com materiais sustentáveis e minimizando o impacto ambiental.</p>
-            <div class="prices2">
-              <span style="font-size: 1.5rem;" class="price1">R$80,00</span>
-              <span style="font-size: 1.1rem;" class="off">R$160,00 </span>
-            </div>            
-            <div class="options1">
-              <div class="amount">
-                <div class="minus">
-                  <button><i class='bx bx-minus botao'></i></button>
+              <div class="thumbnails">
+                <div class="thumbnail">
+                  <img src="/Projeto/Imgs/ecobag borboletab.jpg" alt="">
                 </div>
-                <span>0</span>
-                <div class="plus">
-                  <button><i class='bx bx-plus botao'></i></button>
+
+                <div class="thumbnail">
+                  <img src="/Projeto/Imgs/borboleta2.jpg" alt="">
+                </div>
+
+                <div class="thumbnail">
+                  <img src="/Projeto/Imgs/borboleta3.jpg" alt="">
+                </div>
+
+                <div class="thumbnail">
+                  <img src="/Projeto/Imgs/borboleta5.jpg" alt="">
                 </div>
               </div>
-              <a href="#" class="button5"><img src="/Projeto/Imgs/carrinhoo.png" alt="">Adicionar ao Carrinho</a>
             </div>
-          </div>
-          
 
+          </div>
+          <div class="right-side">
+            <div class="contennt">
+              <h6>EcoArt</h6>
+              <h1>Ecobag Mudanças Borboletas</h1>
+              <p style="font-size: 1.3rem;">Esta ecobag, com 35x35 cm e alça de 30 cm, é mais do que uma sacola; é uma afirmação de estilo consciente e sustentável. Feita de algodão cru, é ecológica, duradoura, macia e resistente, garantindo conforto e confiança ao carregar suas coisas, reforçando nosso compromisso com materiais sustentáveis e minimizando o impacto ambiental.</p>
+              <div class="prices2">
+                <span style="font-size: 1.5rem;" class="price1">R$80,00</span>
+                <span style="font-size: 1.1rem;" class="off">R$160,00 </span>
+              </div>
+              <div class="options1">
+                <div class="amount">
+                  <div class="minus">
+                    <button><i class='bx bx-minus botao'></i></button>
+                  </div>
+                  <span>0</span>
+                  <div class="plus">
+                    <button><i class='bx bx-plus botao'></i></button>
+                  </div>
+                </div>
+                <a href="#" class="button5"><img src="/Projeto/Imgs/carrinhoo.png" alt="">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+
+
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <script src="../Js/gallery.js"></script>
+      </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../Js/carrossel.js"></script>
+    <script src="../Js/script.js"></script>
+    <script src="../Js/gallery.js"></script>
 </body>
+
 </html>

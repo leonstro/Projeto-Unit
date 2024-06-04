@@ -2,9 +2,18 @@
   box-sizing: border-box;
 }
 
-body{
+.button5:hover{
+  background-color: green;
+  transition: 0.3s;
+}
+
+main {
+
   background-color: #F0FFF0;
 }
+/* 
+body{
+} */
 .container3{
   display: flex;
   justify-content: center;
@@ -69,12 +78,7 @@ body{
   margin: 0;
 }
 
-.right-side h1{
-  margin: 0;
-  
-}
 .right-side p{
-  color: white;
   font-size: 14px;
   color: black;
 }
@@ -152,12 +156,7 @@ body{
   transition: 0.2s;
 }
 
-.button5:hover{
-  background-color: green;
-  transition: 0.3s;
 
-
-}
 .button5 img{
   width: 14px;
 }

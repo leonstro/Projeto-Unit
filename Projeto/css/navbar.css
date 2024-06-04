@@ -24,7 +24,8 @@ hr{
   background-image: linear-gradient(green,green);
   background-repeat: no-repeat;
   background-size: 0% 1px;
-  background-position:left bottom 10 ;
+  background-position:left bottom 10px; 
+  /* tava com 10 sem px*/
   transition: background-size 300ms;
   
   

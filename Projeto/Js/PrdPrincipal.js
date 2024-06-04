@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-const img = document.querySelector("img");
+const img = document.querySelector(".select-imagens img");
 
 container.addEventListener("mousemove", (e) =>{
   const x = e.pageX - e.currentTarget.offsetLeft;
