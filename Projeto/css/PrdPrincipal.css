@@ -25,19 +25,20 @@ body{
 }
 
 .select-imagens{
-  max-width: 600px;
+  max-width: 500px;
   overflow: hidden;
 }
 
 .select-imagens img{
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .thumbnails{
   display: flex;
   justify-content: space-evenly;
-  max-width: 600px;
+  max-width: 500px;
   gap: 10px;
   cursor: pointer;
 }
@@ -59,10 +60,6 @@ body{
   flex-direction: column;
   gap: 5px;
   font-size: 1.5rem;
-}
-
-.contennt p {
-  
 }
 
 
@@ -87,7 +84,7 @@ body{
   flex-direction: column;
 }
 .price1{
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 700;
 }
 

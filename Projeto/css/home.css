@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 .cards1{
     margin-top: 200px;
     margin-left: 230px;
@@ -141,14 +143,34 @@
 }
 
 /* footer */
+.vinicio{
+    background-color: #567D4C;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.vinicio a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.vinicio a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
 .footer {
-    background-image: linear-gradient(blueviolet, pink);
+    background-image: linear-gradient(#F0FFF0);
     display: grid;
-    margin-top: 80px;
     justify-content: center;
     align-items: center;
     justify-items: center;
     font-size: 1.2rem;
+}
+.footer hr{
+    width: 110%;
 }
 
 .extras {
@@ -158,24 +180,75 @@
     gap: 115px;
     margin-bottom: 50px;
 }
+.extras h2{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+
+}
+
+.extras p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+}
+
+.extras p:hover{
+    text-decoration: underline;
+}
+
+.amostras {
+    text-align: center;
+    margin-top: 2.85rem;
+    display: flex;
+   
+    gap: 115px;
+    margin-bottom: 20px;
+}
+
+.amostras img{
+    width: 100px;
+}
+
+.amostras h2{
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+
+}
+
+.amostras p{
+    font-size: 1rem;
+}
 
 .credits {
-    justify-self: end;
+    text-align: left;
+    margin-top: 1.6rem;
     display: flex;
-    gap: 645px;
-    margin-top: 40px;
+    gap: 115px;
+    margin-bottom: 50px;
+    margin-bottom: 0; 
 }
 
-hr {
-    width: 1386px;
-    background-color: green;
-    height: 1.2px;
-    border: none;
+.cop{
+    margin-right: 20px;
+    margin-left: 0;
 }
 
-.footer img {
-    justify-self: end;
-    max-width: 350px;
+.tfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #103905;
+    font-family: it;
+}
+
+.tfooter h1{
+    font-family: "Itim", cursive;
+}
+
+.tfooter img{
+    width: 70px;
 }
 
 ul {
@@ -186,3 +259,20 @@ ul {
     position: relative;
     bottom: 1.5px;
 }
+
+.credits img{
+    position: relative;
+    bottom: 8px;
+    width: 450px;
+}
+
+.credits p{
+    font-size: .9rem;
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+}
+
+.credits p:hover{
+    text-decoration: underline;
+}
+
