@@ -8,8 +8,7 @@
 }
 
 main {
-
-  background-color: #F0FFF0;
+  background-color: #fff;
 }
 /* 
 body{
@@ -21,6 +20,15 @@ body{
   width: 100%;
   height: calc(100vh - 85px);
   gap: 100px;
+}
+
+.left-side, .right-side{
+  margin-top: -120px;
+}
+
+.ranking{
+  width: 110px;
+  cursor: pointer;
 }
 
 .left-side{
@@ -90,12 +98,26 @@ body{
 }
 .price1{
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .off{
+  text-decoration: line-through;
   font-size: 12px;
   color: rgb(128, 128, 128);
+}
+
+.off2{
+  color: #567D4C;
+  font-size: 1.5rem;
+}
+
+.cartao{
+  color: #567D4C;
+}
+
+.dividir{
+  font-size: 0.9rem;
 }
 
 .options1{

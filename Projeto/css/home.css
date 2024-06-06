@@ -147,17 +147,20 @@
     background-color: #567D4C;
     padding-top: 5px;
     padding-bottom: 5px;
+   
 }
 .vinicio a{
     text-decoration: none;
     color: #fff;
-    font-size: .9rem;
-    font-weight: 600;
+    font-size: 20px;  
+    font-weight: 700;
 }
-
-.vinicio a:hover{
-    color: white;
-    text-decoration: underline;
+.fa-arrow-up{
+    transition: all 0.5s;
+}
+.fa-arrow-up:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 
