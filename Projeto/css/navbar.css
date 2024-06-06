@@ -13,6 +13,7 @@ hr{
   width:206;
  
 }
+
 .header,
 .navegar{
   display: flex;
@@ -21,7 +22,7 @@ hr{
 }
 
 .navegar a{
-  background-image: linear-gradient(green,green);
+  background-image: linear-gradient(white,white);
   background-repeat: no-repeat;
   background-size: 0% 1px;
   background-position:left bottom 10px; 
@@ -33,7 +34,7 @@ hr{
 
 .navegar a:hover{
   background-size: 100% 1px;
-  color: #567D4C;
+  color: #fff;
  
 }
 
@@ -48,13 +49,11 @@ hr{
   top: 0;
   background-color: #567D4C;
   height: 1000px;
-  width: 18vw;
+  width: 55vw;
   padding: 1em;
   animation-duration: 0.2s;
   margin-left: -100vw;
   z-index: 2;
- 
-  
 }
 
 .navegar2 a{
@@ -70,7 +69,7 @@ hr{
   color: white;
 }
 .header{
-  background-color: var(--color-white);
+  background-color: #567D4C;
   box-shadow: 1px 1px 4px var(--color-dark4);
   height: 3.5em;
   padding: 0 2% 0 10%;
@@ -82,7 +81,7 @@ hr{
 }
 .navegar a{
   text-decoration: none;
-  color: var(--color-green);
+  color: var(--color-white);
   font-weight: bold;
 }
 .navegar2 a{
@@ -90,11 +89,12 @@ hr{
   color: var(--color-white);
   transition: 1s;
   font-weight: bold;
+  
 }
 
 .navegar3 a{
   text-decoration: none;
-  color: var(--color-green);
+  color: var(--color-white);
   transition: 1s;
   font-weight: bold;
 }
@@ -107,7 +107,7 @@ hr{
 }
 
 .navegar3 a:hover{
-  color: green;
+  color: #fff;
   transition: 0.1s;
 }
 
@@ -150,9 +150,18 @@ hr{
 .botao{
   background-color: transparent;
   border: none;
-  color: black;
+  color: white;
   cursor: pointer;
-  display: block;
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .botao{
+    display: block;
+  }
+  .navegar{
+    display: none;
+  }
 }
 @keyframes showSidebar{
   from {margin-left: -100vw;}
@@ -241,3 +250,4 @@ hr{
 .profile p{
   color: #733F2F;
 }
+

@@ -17,6 +17,27 @@
   z-index: -2;
 }
 
+@media screen and (max-width: 480px) {
+
+  .container-images{
+   width: 480px;
+  }
+  .container-images img{
+    width: 480px;
+    height: 300px;
+  }
+
+  .container-slider button{
+   width: 400px;
+  }
+  
+  #prev-button img, #next-button img {
+    visibility:hidden;
+    
+  }
+}
+
+
 .slider {
   opacity: 0;
   transition: opacity .7s;
