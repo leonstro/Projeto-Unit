@@ -184,5 +184,183 @@ body{
   width: 14px;
 }
 
+.comentarios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  margin-bottom: 250px;
+
+}
+.notas{
+  font-size: 0.9rem;
+  background-color: #567D4C;
+  color: #fff;
+}
+
+.experiencia{
+  font-size: 0.9rem;
+  background-color: #567D4C;
+  color: #fff;
+}
+.rank{
+  width: 115px;
+  margin-left: 10px;
+}
+.txtArea {
+  background-color: #fff;
+  border: rgb(167, 167, 167) solid 1px;
+  padding: 10px;
+  color: black;
+  margin: 10px 10px 0px 10px;
+}
+
+.principais{
+  display: flex;
+  margin-left: 10px;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nota{
+  margin-bottom: 29.4rem;
+  box-shadow: 0 0 5px black ;
+}
+
+.clientes{
+  width: 300px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  padding-bottom: 12px;
+}
+
+.nota h2{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rank3{
+  display: flex;
+  margin-top: 10px;
+}
+
+.nota p{
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-top: 6.4px;
+}
+
+.nota h6{
+  display: flex;
+  margin-left: 15px;
+  color: #a8a8a8;
+}
+
+.nota img{
+  margin-bottom: 4px;
+  padding-right: 10px;
+}
+
+.rank2{
+  width: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-left: 10px;
+}
+
+.coments{
+  box-shadow: 0 0 5px black ;
+  
+  
+}
+
+.comentario{
+  border: solid 0.5px #ddd;
+  background-color: #f8f8f8fb;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 10px;  
+}
+
+.comentario h6{
+  display: flex;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.comentario img{
+  width: 100px;
+  display: flex;
+  margin-left: 5px;
+}
+
+.comentario p{
+  display: flex;
+  margin-left: 5px;
+}
+
+.avaliacao{
+  font-size: 0.5rem;
+  color: #868686;
+  margin-left: 5px;
+}
+
+.comentario span{
+  display: flex;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.comentario button{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 6px;
+  padding-bottom:6px;
+  border: solid 1px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.comentario button:hover{
+  background-color: #ddd;
+}
+
+.denuncia{
+  margin-top: 6px;
+  cursor: pointer;
+
+}
+
+.denuncia:hover{
+  text-decoration: underline;
+}
+
+.veja{
+  width: 21%;
+  display: flex;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+  cursor: pointer;
+  color: #567D4C;
+  
+
+}
+
+.veja:hover{
+  text-decoration: underline;
+}
+
+
 
 
