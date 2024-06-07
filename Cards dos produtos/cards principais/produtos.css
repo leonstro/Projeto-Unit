@@ -1,27 +1,28 @@
-.cards1{
-  position: relative;
-  width: 200px;
-  height: 200px;
-  right:120px;
-  display: flex;
-  border-radius: 20px;
-  transition: 0.3s;
-  transition-delay: 0.3s;
-
-}
 
 .cardsPrincipais {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   justify-items: center;
   justify-content: center;
+  margin-top: 20px;
   
-}
+  }
+  
+  .centralize {
+    width: 1250px;
+    height: 500px ;
+    }
 
-.centralize {
-  width: 1250px;
-  height: 500px ;
-}
+ .cards1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    right:120px;
+    display: flex;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+   }
 
 .cards1:hover{
   width: 300px;
@@ -49,31 +50,28 @@
   left: 0;
   width: 150px;
   height: 150px;
-  background: #F0FFF0;
+  background: #FFF;
   border-radius: 50%;
-  border: 8px solid var(--clr);
-  filter:drop-shadow(0 0 10px var(--clr))
-  drop-shadow(0 0 60px var(--clr));
+  filter:drop-shadow(0px 0px 1px black)
+  drop-shadow(0 0px 5px black);
   transition: 0.3s, background 0.3s;
   transition-delay: .3s, .1s;
 }
 
 .cards1:hover .circulo::before{
   width: 100%;
-  height: 100%;
+  height: 95%;
   border-radius: 20px;
-  background: #A1D1A3;
+  background: #fff;
   transition-delay: .3s;
  
 }
 
 .cards1 .circulo .icone1{
   position: absolute;
-  width: 100px;
+  width: 142px;
   transition: 0.3s;
   transition-delay: 0.3s;
-
-
 }
 
 .cards1:hover .circulo .icone1{
@@ -87,15 +85,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0) rotate(315deg);
-  height: 300px;
+  height: 100px;
+  width: 200px;
   transition: .3s ease-in-out;
 }
 
 .cards1:hover .produtos1{
-  top: 31%;
-  left: 89%;
-  height: 300px;
-  transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  top: 30%;
+  left: 96%;
+  height: 200px;
+  transform: translate(-50%, -50%) scale(1) rotate(20deg);
   transition-delay: .3s;
 
 }
@@ -107,7 +106,7 @@
   width: 180%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -122,7 +121,7 @@
 
 
 .cards1 .conteudos1 h2{
-  color: #fff;
+  color: #567D4C;
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 1rem;
@@ -130,15 +129,16 @@
 }
 
 .cards1 .conteudos1 p{
-  color: #fff;
-  max-width: 240px;
+  color: #567D4C;
+  max-width: 202px;
+  font-size: 0.9rem;
   text-align: start;
 
 }
 
 .cards1 .conteudos1 a{
-  color:#111 ;
-  background: #fff;
+  color:#fff ;
+  background: #567D4C;
   text-decoration: none;
   padding: 5px 20px;
   border-radius:10px ;
@@ -195,29 +195,29 @@
   left: 0;
   width: 150px;
   height: 150px;
-  background: #F0FFF0;
+  background: #FFF;
   border-radius: 50%;
-  border: 8px solid var(--clr);
-  filter:drop-shadow(0 0 10px var(--clr))
-  drop-shadow(0 0 60px var(--clr));
+  filter:drop-shadow(0px 0px 1px black)
+  drop-shadow(0 0px 5px black);
   transition: 0.3s, background 0.3s;
   transition-delay: .3s, .1s;
 }
 
 .cards2:hover .circulo::before{
   width: 100%;
-  height: 100%;
+  height: 95%;
   border-radius: 20px;
-  background: #A1D1A3;
+  background: #fff;
   transition-delay: .3s;
  
 }
 
 .cards2 .circulo .icone1{
   position: absolute;
-  width: 100px;
+  width: 117px;
   transition: 0.3s;
   transition-delay: 0.3s;
+  rotate: 4deg;
 
 
 }
@@ -233,15 +233,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0) rotate(315deg);
-  height: 300px;
+  height: 100px;
+  width: 180px;
   transition: .3s ease-in-out;
 }
 
 .cards2:hover .produtos1{
-  top: 31%;
-  left: 89%;
-  height: 250px;
-  transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  top: 27%;
+  left: 100%;
+  height: 180px;
+  transform: translate(-50%, -50%) scale(1) rotate(10deg);
   transition-delay: .3s;
 
 }
@@ -249,10 +250,11 @@
 .cards2 .conteudos1{
   position: absolute;
   left: 20%;
+  top: 8%;
   width: 180%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -267,7 +269,7 @@
 
 
 .cards2 .conteudos1 h2{
-  color: #fff;
+  color: #567D4C;
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 1rem;
@@ -275,15 +277,16 @@
 }
 
 .cards2 .conteudos1 p{
-  color: #fff;
-  max-width: 240px;
+  color: #567D4C;
+  max-width: 202px;
+  font-size: 0.9rem;
   text-align: start;
 
 }
 
 .cards2 .conteudos1 a{
-  color:#111 ;
-  background: #fff;
+  color:#fff ;
+  background: #567D4C;
   text-decoration: none;
   padding: 5px 20px;
   border-radius:10px ;
@@ -341,28 +344,30 @@
   left: 0;
   width: 150px;
   height: 150px;
-  background: #F0FFF0;
+  background: #FFF;
   border-radius: 50%;
-  border: 8px solid var(--clr);
-  filter:drop-shadow(0 0 10px var(--clr))
-  drop-shadow(0 0 60px var(--clr));
+  filter:drop-shadow(0px 0px 1px black)
+  drop-shadow(0 0px 5px black);
   transition: 0.3s, background 0.3s;
   transition-delay: .3s, .1s;
+
 }
 
 .cards3:hover .circulo::before{
   width: 100%;
-  height: 100%;
+  height: 95%;
   border-radius: 20px;
-  background: #A1D1A3;
+  background: #fff;
   transition-delay: .3s;
+ 
 }
 
 .cards3 .circulo .icone1{
   position: absolute;
-  width: 100px;
+  width: 160px;
   transition: 0.3s;
   transition-delay: 0.3s;
+  rotate: 10deg;
 
 
 }
@@ -378,15 +383,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0) rotate(315deg);
-  height: 300px;
+  height: 100px;
+  width: 220px;
   transition: .3s ease-in-out;
 }
 
 .cards3:hover .produtos1{
-  top: 39%;
-  left: 85%;
-  height: 280px;
-  transform: translate(-50%, -50%) scale(1) rotate(10deg);
+  top: 27%;
+  left: 90%;
+  height: 220px;
+  transform: translate(-50%, -50%) scale(1) rotate(16deg);
   transition-delay: .3s;
 
 }
@@ -394,10 +400,11 @@
 .cards3 .conteudos1{
   position: absolute;
   left: 20%;
+  top: 8%;
   width: 180%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -412,7 +419,7 @@
 
 
 .cards3 .conteudos1 h2{
-  color: #fff;
+  color: #567D4C;
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 1rem;
@@ -420,15 +427,16 @@
 }
 
 .cards3 .conteudos1 p{
-  color: #fff;
-  max-width: 240px;
+  color: #567D4C;
+  max-width: 202px;
+  font-size: 0.9rem;
   text-align: start;
 
 }
 
 .cards3 .conteudos1 a{
-  color:#111 ;
-  background: #fff;
+  color:#fff ;
+  background: #567D4C;
   text-decoration: none;
   padding: 5px 20px;
   border-radius:10px ;
@@ -486,26 +494,26 @@
   left: 0;
   width: 150px;
   height: 150px;
-  background: #F0FFF0;
+  background: #FFF;
   border-radius: 50%;
-  border: 8px solid var(--clr);
-  filter:drop-shadow(0 0 10px var(--clr))
-  drop-shadow(0 0 60px var(--clr));
+  filter:drop-shadow(0px 0px 1px black)
+  drop-shadow(0 0px 5px black);
   transition: 0.3s, background 0.3s;
   transition-delay: .3s, .1s;
 }
 
 .cards4:hover .circulo::before{
   width: 100%;
-  height: 100%;
+  height: 95%;
   border-radius: 20px;
-  background: #A1D1A3;
+  background: #fff;
   transition-delay: .3s;
+ 
 }
 
 .cards4 .circulo .icone1{
   position: absolute;
-  width: 100px;
+  width: 180px;
   transition: 0.3s;
   transition-delay: 0.3s;
 
@@ -523,15 +531,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0) rotate(315deg);
-  height: 300px;
+  height: 100px;
+  width: 220px;
   transition: .3s ease-in-out;
 }
 
 .cards4:hover .produtos1{
-  top: 39%;
-  left: 85%;
-  height: 280px;
-  transform: translate(-50%, -50%) scale(1) rotate(10deg);
+  top: 35%;
+  left: 98%;
+  height: 220px;
+  transform: translate(-50%, -50%) scale(1) rotate(14deg);
   transition-delay: .3s;
 
 }
@@ -539,10 +548,11 @@
 .cards4 .conteudos1{
   position: absolute;
   left: 20%;
+  top: 8%;
   width: 180%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -557,7 +567,7 @@
 
 
 .cards4 .conteudos1 h2{
-  color: #fff;
+  color: #567D4C;
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 1rem;
@@ -565,15 +575,16 @@
 }
 
 .cards4 .conteudos1 p{
-  color: #fff;
-  max-width: 240px;
+  color: #567D4C;
+  max-width: 202px;
+  font-size: 0.9rem;
   text-align: start;
 
 }
 
 .cards4 .conteudos1 a{
-  color:#111 ;
-  background: #fff;
+  color:#fff ;
+  background: #567D4C;
   text-decoration: none;
   padding: 5px 20px;
   border-radius:10px ;

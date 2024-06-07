@@ -109,7 +109,7 @@
 }
 
 .ad img {
-    width: 1000px;
+    width: 1500px;
     height: 400px;
     margin-bottom: 40px;
 }
@@ -145,8 +145,8 @@
 /* footer */
 .vinicio{
     background-color: #567D4C;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
    
 }
 .vinicio a{
@@ -159,8 +159,8 @@
     transition: all 0.5s;
 }
 .fa-arrow-up:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
