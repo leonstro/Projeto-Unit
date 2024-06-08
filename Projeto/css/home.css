@@ -114,16 +114,9 @@
     margin-bottom: 40px;
 }
 
-.bestSelling {
+.moreSelling {
     display: grid;
     justify-content: center;
-}
-
-.bestS {
-    justify-self: center;
-    background-color: #1c1c1c7a;
-    width: 1000px;
-    height: 200px;
 }
 
 .adTxt {

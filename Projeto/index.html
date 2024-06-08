@@ -13,6 +13,7 @@
   <script src="https://kit.fontawesome.com/3ba4c661d9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/Cards dos produtos/cards principais/produtos.css"> <!-- Esse não vai no all.css-->
   <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
@@ -253,18 +254,61 @@
     </article>
 
     <!-- Futuro carroselzinho (do bootstrap, so falta achar ele) -->
-    <section class="bestSelling">
-      <p class="offerday" style="padding-bottom: 20px;">Best Selling</p>
-      <div class="bestS">
-        
-      </div>
-    </section>
+    <section class="moreSelling">
 
-    <section class="bestSelling">
-      <p class="offerday" style="padding-bottom: 20px; padding-top: 80px;">Anuncio Coming Soon...</p>
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="bestSelling">
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotGojo.webp" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotGojo.webp" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMegumi.webp" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotEmo.png" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMegumi.webp" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMcDonalds.webp" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMegumi.webp" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotPintura.png" alt="img" draggable="false" ></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+
+      </div>
+
+      <!-- <p class="offerday" style="padding-bottom: 20px; padding-top: 80px;">Anuncio Coming Soon...</p>
       <div class="bestS">
         
-      </div>
+      </div> -->
     </section>
 
     <section>
@@ -408,6 +452,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./Js/carrossel.js"></script>
     <script src="./Js/script.js"></script>
+    <script src="./Js/bestSelling.js"></script>
   </div>
 </body>
 
