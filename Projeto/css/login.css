@@ -82,9 +82,9 @@ main{
 }
 
 @media (max-width:768px){
-  .form-button{
+  .form .form-button{
     background-color: var(--primary-color);
-    color: var(--secundary-color);
+    color: var(--text-color-light);
     border: 2px solid var(--secundary-color);
   }
 }
