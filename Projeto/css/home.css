@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
+.frufru {
+  padding: 20px 15px;
+  background-color: #fff;
+  z-index: 99;
+  width: 200px;
+  justify-self: center;
+}
+
+.rela {
+  position: relative;
+  top: 50px;
+}
+
 .cards1 {
   margin-top: 200px;
   margin-left: 230px;
@@ -125,6 +138,7 @@
 
 .moreSelling {
   display: grid;
+  position: relative;
   justify-content: center;
 }
 
