@@ -43,11 +43,18 @@
     </div>
 
     <div class="navegar3">
-      <a href="#" onclick="car()"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="#" id="abrir-cart"><i class="fa-solid fa-cart-shopping"></i></a>
       <span class="dropdown">
         <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá,⠀Leon</i></a>
       </span>
+      <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <div class="prd-cart">
+        <p>Seu Carrinho está vazio</p>
+      </div>
+      </div>
     </div>
+    
     <div class="menu">
       <ul>
         <li class="profile">
@@ -112,6 +119,7 @@
       <button class="button-direito" id="next-button"><img src="/carrossel/imagens/arrow.png" alt="next-button"></button>
     </div>
     <!-- body -->
+     <section class="mobile">
     <div class="cards-mobile">
       <div class="categorias-mobile">
         <li>Para sua casa</li>
@@ -120,6 +128,26 @@
         <li>EcoBags</li>
       </div>
     </div>
+    <h1 class="today-mobile">TODAY'S OFFER</h1>
+    <div class="vejamais1">
+      <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
+      <h2>Organizador de mesa em bambu</h2>
+        <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+        <button>Adicionar ao Carrinho</button>
+        </div>  
+        <div class="vejamais1">
+          <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
+          <h2>Organizador de mesa em bambu</h2>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+            </div> 
+            <div class="vejamais1">
+              <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
+              <h2>Organizador de mesa em bambu</h2>
+                <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+                <button>Adicionar ao Carrinho</button>
+                </div>     
+  </section>
     <section class="cardsPrincipais">
       <div class="centralize">
         <div class="cards1">
@@ -185,28 +213,28 @@
         </div>
       </div>
       <div class="cardGerais">
-        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag snoppy3.png" alt="">
+        <img class="imge cardGerais-imge" src="/Projeto/Imgs/seumadruga2.png" alt="">
         <div class="cardGerais-data">
-          <h1 class="cardGerais-title h1">EcoBag Snoopy</h1>
-          <span class="cardGerais-preci">R$80,00</span>
+          <h1 class="cardGerais-title h1">EcoBag Sou Feio</h1>
+          <span class="cardGerais-preci">R$40,00</span>
           <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
           <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
         </div>
       </div>
       <div class="cardGerais">
-        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag snoppy3.png" alt="">
+        <img class="imge cardGerais-imge" src="/Projeto/Imgs/borboletasHOMEE.png" alt="">
         <div class="cardGerais-data">
-          <h1 class="cardGerais-title h1">EcoBag Snoopy</h1>
-          <span class="cardGerais-preci">R$80,00</span>
+          <h1 class="cardGerais-title h1">EcoBag Mudanças</h1>
+          <span class="cardGerais-preci">R$40,00</span>
           <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
           <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
         </div>
       </div>
       <div class="cardGerais">
-        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag snoppy3.png" alt="">
+        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag gato.png" alt="">
         <div class="cardGerais-data">
-          <h1 class="cardGerais-title h1">EcoBag Snoopy</h1>
-          <span class="cardGerais-preci">R$80,00</span>
+          <h1 class="cardGerais-title h1">EcoBag Gatinho</h1>
+          <span class="cardGerais-preci">R$42,00</span>
           <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
           <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
         </div>
@@ -216,9 +244,19 @@
     
     <section class="containerT">
       <div class="cardGerais">
-        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag gato.png" alt="">
+        <img class="imge cardGerais-imge" src="/Projeto/Imgs/sabonetepreto.png" alt="">
         <div class="cardGerais-data">
-          <h1 class="cardGerais-title h1">EcoBag Gatinho</h1>
+          <h1 class="cardGerais-title h1">Sabonete Carvao</h1>
+          <span class="cardGerais-preci">R$40,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Projeto/Imgs/desodorante.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">Hidratante Corporal</h1>
           <span class="cardGerais-preci">R$80,00</span>
           <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
           <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
@@ -226,29 +264,19 @@
       </div>
       
       <div class="cardGerais">
-        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag gato.png" alt="">
+        <img class="imge cardGerais-imge" src="/Projeto/Imgs/bolsadeferramentas.png" alt="">
         <div class="cardGerais-data">
-          <h1 class="cardGerais-title h1">EcoBag Gatinho</h1>
-          <span class="cardGerais-preci">R$80,00</span>
+          <h1 class="cardGerais-title h1">Kit P/ Jardinagem</h1>
+          <span class="cardGerais-preci">R$255,00</span>
           <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
           <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
         </div>
       </div>
       
       <div class="cardGerais">
-        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag gato.png" alt="">
+        <img class="imge cardGerais-imge" src="/Projeto/Imgs/cadernosHOME.png" alt="">
         <div class="cardGerais-data">
-          <h1 class="cardGerais-title h1">EcoBag Gatinho</h1>
-          <span class="cardGerais-preci">R$80,00</span>
-          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
-          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
-        </div>
-      </div>
-      
-      <div class="cardGerais">
-        <img class="imge cardGerais-imge" src="/Projeto/Imgs/ecobag gato.png" alt="">
-        <div class="cardGerais-data">
-          <h1 class="cardGerais-title h1">EcoBag Gatinho</h1>
+          <h1 class="cardGerais-title h1">Caderno Ecológico</h1>
           <span class="cardGerais-preci">R$80,00</span>
           <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
           <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
@@ -322,6 +350,28 @@
       </article>
 
     <section>
+      <section class="mobile">
+        <h1 class="mais-mobile">Veja Mais</h1>
+        <div class="vejamais1">
+          <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
+          <h2>Organizador de mesa em bambu</h2>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+            </div>  
+            <div class="vejamais1">
+              <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
+              <h2>Organizador de mesa em bambu</h2>
+                <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+                <button>Adicionar ao Carrinho</button>
+                </div> 
+                <div class="vejamais1 ultimo">
+                  <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
+                  <h2>Organizador de mesa em bambu</h2>
+                    <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+                    <button>Adicionar ao Carrinho</button>
+                    </div> 
+
+      </section>
       <p class="offerday">Veja mais...</p>
       <div class="seeMore">
         <div class="vejamais">

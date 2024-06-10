@@ -111,4 +111,9 @@ const menu = document.querySelector('.menu');
 perfil.onclick = () => {
   menu.classList.toggle('ativo');
 }
+
+document.querySelector("#abrir-cart").addEventListener("click", function(){
+  document.querySelector("#cart").classList.toggle("aberto")
+
+})
   

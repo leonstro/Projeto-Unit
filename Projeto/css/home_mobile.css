@@ -2,6 +2,10 @@
   .cards-mobile {
     display: none;
   }
+  .mobile{
+    display: none;
+  }
+
 }
 .cards-mobile {
   margin-top: 43px;
@@ -56,4 +60,62 @@
     display: grid;
     width: 100px;
   }
+
+  .vejamais1 {
+    margin-top: 40px;
+    width: 269px;
+    height: 320px;
+    position: relative;
+    left: 70px;
+  }
+  .vejamais1 h2 {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  
+  .vejamais1 .titulo {
+    color: #fff;
+  }
+  
+  .vejamais1 button {
+    background-color: #a1d1a3;
+    color: #fff;
+    border: solid #a1d1a3 2px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .vejamais1 button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+  
+  .preco1 {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .vejamais1 img {
+    width: 200px;
+  }
 }
+
+.today-mobile{
+  margin-top: 50px;
+}
+
+.mais-mobile{
+  margin-top: -60px;
+  font-size: 2rem;
+}
+
+.ultimo{
+  margin-bottom: 100px;
+}
+
