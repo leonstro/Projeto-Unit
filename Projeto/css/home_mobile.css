@@ -23,7 +23,7 @@
   background-color: #a1d1a3;
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .footer .extras {
     display: grid;
     grid-template-columns: 199px 199px;
@@ -52,12 +52,8 @@
     gap: 10px;
   }
 
-  .footer {
-    display: none;
-  }
-
   .produtoBest li {
     display: grid;
     width: 100px;
   }
-} */
+}
