@@ -8,6 +8,11 @@ var showSidebar = false;
 //   window.location.href = "/projeto/index.html";
 // } 
 
+// Logo
+function logo() {
+  window.location.href = "/projeto/index.html";
+}
+
 function logout(){
   window.location.href = "/projeto/telas/login.html";
 }
@@ -18,6 +23,23 @@ function car() {
 
 function prdPrincipal() {
   window.location.href = "/projeto/telas/prdprincipal.html";
+}
+
+// Ecobags
+function ecoBag() {
+  window.location.href = "/projeto/telas/tdsEcobag.html";
+}
+// Bioobok
+function bioBook() {
+  window.location.href = "/projeto/telas/tdsBiobook.html";
+}
+// SelfCare
+function selfcare() {
+  window.location.href = "/projeto/telas/tdsSelfcare.html";
+}
+// Para Casa
+function paraCasa() {
+  window.location.href = "/projeto/telas/tdsCasa.html";
 }
 
 

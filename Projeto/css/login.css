@@ -11,6 +11,9 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(/Projeto/Imgs/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .login-container{

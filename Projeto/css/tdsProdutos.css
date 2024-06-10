@@ -1,3 +1,73 @@
+@media screen and (max-width: 480px) {
+  section .seeMore2 {
+    padding-right: 50px;
+    grid-template-columns: 200px;
+  }
+}
+
+/* footer */
+@media screen and (max-width: 480px) {
+  .footer .extras {
+    display: grid;
+    grid-template-columns: 199px 199px;
+    gap: 15px;
+    margin-bottom: 150px;
+  }
+  div .vinicio {
+    width: 414px;
+  }
+
+  .pagamnt {
+    max-width: 190px;
+  }
+
+  .amostras {
+    display: none;
+  }
+
+  .tfooter h1 {
+    font-size: 1.5rem;
+  }
+
+  .credits {
+    display: grid;
+    grid-template-columns: 198px 198px;
+    gap: 10px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ad2 .adImg {
+    padding-top: 200px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav .navegar3,
+  .container-fluid {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 800px) {
+  .footer {
+    display: none;
+  }
+} */
+
+.content2 {
+  text-align: center;
+  padding-top: 5em;
+  height: 100vh;
+  transition: 1s;
+  color: black;
+}
 .seeMore2 {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -7,17 +77,27 @@
   margin-bottom: 200px;
 }
 
-.imagem{
+.imagem {
   position: relative;
 }
 
-.informacoes{
+.ad2 {
+  height: 500px;
+  margin-top: -40px;
+}
+
+.informacoes {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  background: linear-gradient(to top, rgb(86,125,10,1), rgb(86,125,10,1), rgba(86,125,10,0.6));
+  background: linear-gradient(
+    to top,
+    rgb(86, 125, 10, 1),
+    rgb(86, 125, 10, 1),
+    rgba(86, 125, 10, 0.6)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,59 +106,54 @@
   transition: 0.6s;
   gap: 15px;
   color: #fff;
-  border: solid #567D4C 0.1px;
+  border: solid #567d4c 0.1px;
   border-radius: 6px;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
-.informacoes:hover{
+.informacoes:hover {
   opacity: 1;
 }
 
-.vejamais2{
+.vejamais2 {
   width: 269px;
   height: 320px;
   position: relative;
-
-  
 }
-.vejamais2 h2{
+.vejamais2 h2 {
   margin-top: 15px;
   font-size: 1rem;
 }
 
-.vejamais2 .titulo{
+.vejamais2 .titulo {
   color: #fff;
 }
-  
 
-
-.vejamais2 button{
-  background-color: #A1D1A3;
+.vejamais2 button {
+  background-color: #a1d1a3;
   color: #fff;
-  border: solid #A1D1A3 2px;
+  border: solid #a1d1a3 2px;
   margin-top: 15px;
   border-radius: 5px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 5px;
-  padding-bottom:5px;
+  padding-bottom: 5px;
   font-size: 0.9rem;
 }
 
-.vejamais2 button:hover{
+.vejamais2 button:hover {
   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-   transition: .1s;
+  transform: scale(1.1);
+  transition: 0.1s;
 }
 
-.preco1{
+.preco1 {
   margin-top: 10px;
   font-size: 1rem;
   font-weight: 700;
-
 }
 
-.vejamais2 img{
-  width: 200px;   
+.vejamais2 img {
+  width: 200px;
 }

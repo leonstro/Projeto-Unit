@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,17 @@
   <link rel="stylesheet" href="../css/tdsProdutos.css">
 
 </head>
+
 <body>
 
-  <nav class="header" id="header" >
+  <nav class="header" id="header">
     <button onclick="toggleSidebar()" class="botao">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
       </svg>
     </button>
     <div class="logo">
-      <img class="ecoart" src="/Projeto/Imgs/logo.png"  alt="logo" />
+      <img class="ecoart" src="/Projeto/Imgs/logo.png" alt="logo" onclick="logo()" />
     </div>
     <div class="navegar">
       <a href="#" class="ativar">Home</a>
@@ -89,8 +91,8 @@
     </div>
     <p></p>
   </nav>
-  <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
-    
+  <div tabindex="0" onclick="closeSidebar()" class="content2" id="content">
+
     <!-- Section -->
     <section>
       <p class="offerday">All BioBooks</p>
@@ -101,9 +103,9 @@
           <div class="informacoes">
             <h2 class="titulo">Caderno eco em papel pedra</h2>
             <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
             <button>Adicionar ao Carrinho</button>
-            </div>    
+          </div>
         </div>
         <div class="vejamais2">
           <img src="/Projeto/Imgs/produtos img/caderno2.png" alt="">
@@ -111,11 +113,11 @@
           <div class="informacoes">
             <h2 class="titulo">Kit caderno kraft reciclagem</h2>
             <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
             <button>Adicionar ao Carrinho</button>
-            </div>    
+          </div>
         </div>
-        <div class="vejamais2">
+        <!-- <div class="vejamais2">
           <img src="/Projeto/Imgs/produtos img/caderno3.png" alt="">
           <h2>Caderneta reciclada</h2>
           <div class="informacoes">
@@ -215,140 +217,140 @@
             <button>Adicionar ao Carrinho</button>
             </div>    
         </div>
+      </div> -->
+    </section>
+
+    <article class="ad2">
+      <img class="adImg" src="../Imgs/propaganda eco.PNG" alt="">
+    </article>
+
+    <section>
+      <p class="offerday">More BioBook</p>
+      <div class="seeMore2">
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/caderno1.png" alt="">
+          <h2>Caderno eco em papel pedra</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Caderno eco em papel pedra</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/caderno2.png" alt="">
+          <h2>Kit caderno kraft reciclagem</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Kit caderno kraft reciclagem</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/caderno3.png" alt="">
+          <h2>Caderneta reciclada</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Caderneta reciclada</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/creme1.png" alt="">
+          <h2>Hidratante zero</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Hidratante zero</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/esponja.png" alt="">
+          <h2>Bucha vegetal</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Bucha vegetal</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/sabonete1.png" alt="">
+          <h2>Sabonete argila vermelha</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Sabonete argila vermelha</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/pente.png" alt="">
+          <h2>Escova de cabelo bambu</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Escova de cabelo bambu</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/faca.png" alt="">
+          <h2>Kit churrasqueiro ecológico</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Kit churrasqueiro ecológico</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
+          <h2>Organizador de mesa em bambu</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Organizador de mesa em bambu</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/tesoura2.png" alt="">
+          <h2>Kit jardinagem maleta C/8 peças</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Kit jardinagem maleta C/8 peças</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/tesoura2.png" alt="">
+          <h2>Kit jardinagem maleta C/8 peças</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Kit jardinagem maleta C/8 peças</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais2">
+          <img src="/Projeto/Imgs/produtos img/tesoura2.png" alt="">
+          <h2>Kit jardinagem maleta C/8 peças</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Kit jardinagem maleta C/8 peças</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Projeto/Imgs/ranking2.png" alt=""></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <article class="ad">
-      <img src="../Imgs/propaganda eco.PNG" alt="">
-    </article>
-
-  <section>
-    <p class="offerday">More BioBook</p>
-    <div class="seeMore2">
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/caderno1.png" alt="">
-        <h2>Caderno eco em papel pedra</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Caderno eco em papel pedra</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/caderno2.png" alt="">
-        <h2>Kit caderno kraft reciclagem</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Kit caderno kraft reciclagem</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/caderno3.png" alt="">
-        <h2>Caderneta reciclada</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Caderneta reciclada</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/creme1.png" alt="">
-        <h2>Hidratante zero</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Hidratante zero</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/esponja.png" alt="">
-        <h2>Bucha vegetal</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Bucha vegetal</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">          
-        <img src="/Projeto/Imgs/produtos img/sabonete1.png" alt="">
-        <h2>Sabonete argila vermelha</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Sabonete argila vermelha</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/pente.png" alt="">
-        <h2>Escova de cabelo bambu</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Escova de cabelo bambu</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/faca.png" alt="">
-        <h2>Kit churrasqueiro ecológico</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Kit churrasqueiro ecológico</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/tabua.png" alt="">
-        <h2>Organizador de mesa em bambu</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Organizador de mesa em bambu</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/tesoura2.png" alt="">
-        <h2>Kit jardinagem maleta C/8 peças</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Kit jardinagem maleta C/8 peças</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/tesoura2.png" alt="">
-        <h2>Kit jardinagem maleta C/8 peças</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Kit jardinagem maleta C/8 peças</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-      <div class="vejamais2">
-        <img src="/Projeto/Imgs/produtos img/tesoura2.png" alt="">
-        <h2>Kit jardinagem maleta C/8 peças</h2>
-        <div class="informacoes">
-          <h2 class="titulo">Kit jardinagem maleta C/8 peças</h2>
-          <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
-          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;"  src="/Projeto/Imgs/ranking2.png" alt=""></p>
-          <button>Adicionar ao Carrinho</button>
-          </div>    
-      </div>
-    </div>
-  </section>
-
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="tfooter">
         <h1> <img src="/Projeto/Imgs/icone verde.png" alt="">O FUTURO É VERDE <img src="/Projeto/Imgs/icone verde.png" alt=""></h1>
@@ -383,12 +385,12 @@
           </li>
         </ul>
       </div>
-      </footer>
-      <div class="vinicio">
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-      </div>
-      <footer class="footer"> 
-        <div class="extras">
+    </footer>
+    <div class="vinicio">
+      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <footer class="footer">
+      <div class="extras">
         <ul>
           <li>
             <div>
@@ -429,17 +431,17 @@
           </li>
         </ul>
       </div>
-      <hr>
+      <hr class="line">
       <div class="credits">
         <div class="cop">
           <p>© Copyright 2024 Green People. All Rights Reserved.</p>
         </div>
         <p>Privacy Policy</p>
         <p>Terms & Conditions</p>
-        <img src="/Projeto/Imgs/pagamentos.png" alt="">
+        <img class="pagamnt" src="/Projeto/Imgs/pagamentos.png" alt="">
       </div>
     </footer>
-     
+
 
 
 
@@ -447,10 +449,9 @@
 
 
   </div>
-  <link rel="stylesheet" href="./css/carrossel.css" />
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="./Js/carrossel.js"></script>
-  <script src="./Js/script.js"></script>
+  <script src="../Js/script.js"></script>
 </body>
+
 </html>

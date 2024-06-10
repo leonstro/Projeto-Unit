@@ -1,8 +1,8 @@
-.moreSelling hr{
+.moreSelling hr {
   width: 1500px;
 }
 
-.moreSelling h1{
+.moreSelling h1 {
   margin-top: 10px;
 }
 
@@ -11,7 +11,6 @@
   width: 100%;
   position: relative;
   left: 180px;
-  
 }
 .wrapper i {
   top: 50%;
@@ -24,20 +23,20 @@
   line-height: 50px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active{
+.wrapper i:active {
   transform: translateY(-50%) scale(0.85);
 }
-.wrapper i:first-child{
+.wrapper i:first-child {
   left: -22px;
 }
-.wrapper i:last-child{
+.wrapper i:last-child {
   right: -22px;
 }
-.wrapper .bestSelling{
+.wrapper .bestSelling {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
@@ -78,7 +77,7 @@
   border-radius: 8px;
 }
 .bestSelling .produtoBest .cardImgSell {
-  background: #8B53FF;
+  background: #567d4c;
   height: 148px;
   width: 148px;
   border-radius: 50%;
@@ -96,7 +95,7 @@
   margin: 30px 0 5px;
 }
 .bestSelling .produtoBest span {
-  color: #6A6D78;
+  color: #6a6d78;
   font-size: 1.31rem;
 }
 @media screen and (max-width: 900px) {
@@ -106,6 +105,6 @@
 }
 @media screen and (max-width: 600px) {
   .wrapper .bestSelling {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 220px;
   }
 }

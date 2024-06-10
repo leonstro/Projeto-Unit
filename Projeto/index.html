@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/Cards dos produtos/cards principais/produtos.css"> <!-- Esse não vai no all.css-->
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="/Projeto/css/home_mobile.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
       </svg>
     </button>
     <div class="logo">
-      <img class="ecoart" src="/Projeto/Imgs/logo.png"  alt="logo" />
+      <img class="ecoart" src="/Projeto/Imgs/logo.png"  alt="logo" onclick="logo()"/>
     </div>
     <div class="navegar">
       <a href="#" class="ativar">Home</a>
@@ -111,6 +112,14 @@
       <button class="button-direito" id="next-button"><img src="/carrossel/imagens/arrow.png" alt="next-button"></button>
     </div>
     <!-- body -->
+    <div class="cards-mobile">
+      <div class="categorias-mobile">
+        <li>Para sua casa</li>
+        <li> Self Care</li>
+        <li>BioBooks</li>
+        <li>EcoBags</li>
+      </div>
+    </div>
     <section class="cardsPrincipais">
       <div class="centralize">
         <div class="cards1">
@@ -120,7 +129,7 @@
           <div class="conteudos1">
             <h2>EcoBags</h2>
             <p>Aqui, você encontrará uma grande variedade de ecobags ecológicas, duráveis e estilosas, perfeitas para suas compras diárias. Escolha sustentabilidade com as nossas ecobags!</p>
-            <a href="#">Explorar Mais!</a>
+            <a href="#" onclick="ecoBag()">Explorar Mais!</a>
           </div>
           <img src="/Cards dos produtos/cards principais/imgs/ecobagg2.png" class="produtos1">
         </div>
@@ -131,7 +140,7 @@
           <div class="conteudos1">
             <h2>BioBooks</h2>
             <p>Aqui, você encontrará uma grande variedade de BioBooks ecológicos, duráveis e estilosos, perfeitos para suas leituras diárias. Escolha sustentabilidade com os nossos BioBooks!</p>
-            <a href="#">Explorar Mais!</a>
+            <a href="#" onclick="bioBook()">Explorar Mais!</a>
           </div>
           <img src="./Imgs/biobookss.png" class="produtos1">
         </div>
@@ -142,7 +151,7 @@
           <div class="conteudos1">
             <h2>Self Care</h2>
             <p>Aqui, você encontrará uma grande variedade de produtos de autocuidado ecológicos, duráveis e estilosos, perfeitos para o seu bem-estar diário. Escolha sustentabilidade com a nossa linha de autocuidado!</p>
-            <a href="#">Explorar Mais!</a>
+            <a href="#" onclick="selfcare()">Explorar Mais!</a>
           </div>
           <img src="./Imgs/selfcare.png" class="produtos1">
         </div>
@@ -153,7 +162,7 @@
           <div class="conteudos1">
             <h2>Para a casa</h2>
             <p>Aqui, você encontrará uma grande variedade de produtos ecológicos para casa, duráveis e elegantes, perfeitos para o uso diário. Torne seu lar mais sustentável com nossos produtos!</p>
-            <a href="#">Explorar Mais!</a>
+            <a href="#" onclick="paraCasa()">Explorar Mais!</a>
           </div>
           <img src="./Imgs/para sua casa.png" class="produtos1">
         </div>
@@ -249,8 +258,8 @@
 
 
     <!-- Outra seção -->
-    <article class="ad">
-      <img src="./Imgs/propaganda eco.PNG" alt="">
+    <article class="ad2">
+      <img class="reciclar2" src="./Imgs/propaganda eco.PNG" alt="">
     </article>
 
     <!-- Futuro carroselzinho (do bootstrap, so falta achar ele) -->
@@ -500,14 +509,14 @@
           </li>
         </ul>
       </div>
-      <hr>
+      <hr class="line">
       <div class="credits">
         <div class="cop">
           <p>© Copyright 2024 Green People. All Rights Reserved.</p>
         </div>
         <p>Privacy Policy</p>
         <p>Terms & Conditions</p>
-        <img src="/Projeto/Imgs/pagamentos.png" alt="">
+        <img class="pagamnt" src="/Projeto/Imgs/pagamentos.png" alt="">
       </div>
     </footer>
      

@@ -1,0 +1,63 @@
+@media screen and (min-width: 480px) {
+  .cards-mobile {
+    display: none;
+  }
+}
+.cards-mobile {
+  margin-top: 43px;
+  background-color: #567d4c;
+}
+.categorias-mobile {
+  color: #fff;
+  margin-left: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.categorias-mobile li:hover {
+  background-color: #a1d1a3;
+}
+
+/* @media screen and (max-width: 480px) {
+  .footer .extras {
+    display: grid;
+    grid-template-columns: 199px 199px;
+    gap: 15px;
+    margin-bottom: 150px;
+  }
+  div .vinicio {
+    width: 414px;
+  }
+
+  .pagamnt {
+    max-width: 190px;
+  }
+
+  .amostras {
+    display: none;
+  }
+
+  .tfooter h1 {
+    font-size: 1.5rem;
+  }
+
+  .credits {
+    display: grid;
+    grid-template-columns: 198px 198px;
+    gap: 10px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .produtoBest li {
+    display: grid;
+    width: 100px;
+  }
+} */
