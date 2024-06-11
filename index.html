@@ -1,0 +1,669 @@
+<!-- <link rel="stylesheet" href="css/style.css" /> -->
+<!-- <link rel="stylesheet" href="/css/home.css" /> -->
+<!-- <link rel="stylesheet" href="/css/navbar.css"> -->
+<!-- <link rel="stylesheet" href="/Cards dos produtos/card.css"> -->
+<!-- <link rel="stylesheet" href="css/bootstrap.css">   -->
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" href="./Imgs/icone-nav.ico">
+  <script src="https://kit.fontawesome.com/3ba4c661d9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Cards dos produtos/cards principais/produtos.css"> <!-- Esse não vai no all.css-->
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/home_mobile.css">
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="header" id="header">
+    <button onclick="toggleSidebar()" class="botao">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+    </button>
+    <div class="logo">
+      <img class="ecoart" src="./Imgs/logo.png" alt="logo" onclick="logo()" />
+    </div>
+    <div class="navegar">
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a class="quem" href="#">Quem⠀somos</a> <!-- aq tem um caractere invisível -->
+    </div>
+
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="navegar3">
+      <div class="icone-carrinho-container">
+        <a id="abrir-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="icone-carrinho-contador">4</div>
+      </div>
+      <span class="dropdown">
+        <a><i><i class="fa-solid fa-circle-user"></i>Olá,⠀Leon</i></a>
+      </span>
+      <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <div class="prd-cart">
+          <p class="msg-carrinho-vazio  carrinho-vazio" id="msg-carrinho-vazio">Seu Carrinho está vazio</p>
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li class="profile">
+          <a href="#"><i class="fa-solid fa-circle-user user-profile"></i>
+            </ion-icon>
+          </a>
+          <p>Leon de França</p>
+        </li>
+        <hr>
+        <li>
+          <a href="#">
+            <ion-icon name="bag-outline"></ion-icon>
+            Seus Pedidos
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="settings-outline"></ion-icon>
+            Configurações
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="help-circle-outline"></ion-icon>
+            Ajuda
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="logout()">
+            <ion-icon name="log-out-outline"></ion-icon>
+            Sair
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navegar2" id="navegar2">
+      <button onclick="toggleSidebar()" class="botao">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+        </svg>
+      </button>
+      <a href="#" class="ativar">Home</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a href="#">Quem somos</a>
+    </div>
+    <p></p>
+  </nav>
+  <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+
+    <!-- carrossel -->
+
+    <div class="container-slider">
+      <button class="button-esquerdo" id="prev-button"><img src="/Imgs/imagens/arrow.png" alt="prev-button"></button>
+      <div class="container-images">
+        <img src="/Imgs/imagens/jardinagem1.jpg" alt="girl" class="slider on">
+        <img src="/Imgs/imagens/carrossel.PNG" alt="girl" class="slider">
+        <img src="/Imgs/imagens/jardinagem2.jpg" alt="girl" class="slider">
+        <img src="/Imgs/imagens/eco.jpg" alt="girl" class="slider">
+
+      </div>
+      <button class="button-direito" id="next-button"><img src="/Imgs/imagens/arrow.png" alt="next-button"></button>
+    </div>
+    <!-- body -->
+    <section class="mobile">
+      <div class="cards-mobile">
+        <div class="categorias-mobile">
+          <li>Para sua casa</li>
+          <li> Self Care</li>
+          <li>BioBooks</li>
+          <li>EcoBags</li>
+        </div>
+      </div>
+      <h1 class="today-mobile">TODAY'S OFFER</h1>
+      <div class="vejamais1">
+        <img src="/Imgs/produtos img/tabua.png" alt="">
+        <h2>Organizador de mesa em bambu</h2>
+        <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Imgs/ranking2.png" alt=""></p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+      <div class="vejamais1">
+        <img src="/Imgs/produtos img/tabua.png" alt="">
+        <h2>Organizador de mesa em bambu</h2>
+        <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Imgs/ranking2.png" alt=""></p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+      <div class="vejamais1">
+        <img src="/Imgs/produtos img/tabua.png" alt="">
+        <h2>Organizador de mesa em bambu</h2>
+        <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Imgs/ranking2.png" alt=""></p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+    </section>
+
+    <section class="cardsPrincipais">
+      <div class="centralize">
+        <div class="cards1">
+          <div class="circulo" style="--clr:#733F2F;">
+            <img src="/Imgs/imgs_cards/ecobagg2.png" class="icone1">
+          </div>
+          <div class="conteudos1">
+            <h2>EcoBags</h2>
+            <p>Aqui, você encontrará uma grande variedade de ecobags ecológicas, duráveis e estilosas, perfeitas para suas compras diárias. Escolha sustentabilidade com as nossas ecobags!</p>
+            <a href="#" onclick="ecoBag()">Explorar Mais!</a>
+          </div>
+          <img src="/Imgs/imgs_cards/ecobagg2.png" class="produtos1">
+        </div>
+        <div class="cards2">
+          <div class="circulo" style="--clr:#733F2F;">
+            <img src="./Imgs/biobookss.png" class="icone1">
+          </div>
+          <div class="conteudos1">
+            <h2>BioBooks</h2>
+            <p>Aqui, você encontrará uma grande variedade de BioBooks ecológicos, duráveis e estilosos, perfeitos para suas leituras diárias. Escolha sustentabilidade com os nossos BioBooks!</p>
+            <a href="#" onclick="bioBook()">Explorar Mais!</a>
+          </div>
+          <img src="./Imgs/biobookss.png" class="produtos1">
+        </div>
+        <div class="cards3">
+          <div class="circulo" style="--clr:#733F2F;">
+            <img src="./Imgs/selfcare.png" class="icone1">
+          </div>
+          <div class="conteudos1">
+            <h2>Self Care</h2>
+            <p>Aqui, você encontrará uma grande variedade de produtos de autocuidado ecológicos, duráveis e estilosos, perfeitos para o seu bem-estar diário. Escolha sustentabilidade com a nossa linha de autocuidado!</p>
+            <a href="#" onclick="selfcare()">Explorar Mais!</a>
+          </div>
+          <img src="./Imgs/selfcare.png" class="produtos1">
+        </div>
+        <div class="cards4">
+          <div class="circulo" style="--clr:#733F2F;">
+            <img src="./Imgs/para sua casa.png" class="icone1">
+          </div>
+          <div class="conteudos1">
+            <h2>Para a casa</h2>
+            <p>Aqui, você encontrará uma grande variedade de produtos ecológicos para casa, duráveis e elegantes, perfeitos para o uso diário. Torne seu lar mais sustentável com nossos produtos!</p>
+            <a href="#" onclick="paraCasa()">Explorar Mais!</a>
+          </div>
+          <img src="./Imgs/para sua casa.png" class="produtos1">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Outra seção -->
+    <div class="containerGeral">
+      <p class="offerday">TODAY'S OFFER</p>
+    </div>
+    <section class="containerP">
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/ecobag snoppy3.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title" id="cardGerais-title">EcoBag Snoopy</h1>
+          <span class="cardGerais-preci">R$ 80.00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a class="cardGerais-button">Comprar</a>
+        </div>
+      </div>
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/seumadruga2.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">EcoBag Sou Feio</h1>
+          <span class="cardGerais-preci">R$40,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/borboletasHOMEE.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">EcoBag Mudanças</h1>
+          <span class="cardGerais-preci">R$40,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/ecobag gato.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">EcoBag Gatinho</h1>
+          <span class="cardGerais-preci">R$42,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="containerT">
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/sabonetepreto.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">Sabonete Carvao</h1>
+          <span class="cardGerais-preci">R$40,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/desodorante.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">Hidratante Corporal</h1>
+          <span class="cardGerais-preci">R$ 80.00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/bolsadeferramentas.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">Kit P/ Jardinagem</h1>
+          <span class="cardGerais-preci">R$255,00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+
+      <div class="cardGerais">
+        <img class="imge cardGerais-imge" src="/Imgs/cadernosHOME.png" alt="">
+        <div class="cardGerais-data">
+          <h1 class="cardGerais-title h1">Caderno Ecológico</h1>
+          <span class="cardGerais-preci">R$ 80.00</span>
+          <p class="cardGerais-description">A ecobag 100% algodão é um produto de alta qualidade, que tem como principal objetivo oferecer uma alternativa sustentável e reutilizável.</p>
+          <a href="#" class="cardGerais-button" onclick="prdPrincipal()">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Outra seção -->
+    <article class="ad2">
+      <img class="reciclar2" src="./Imgs/propaganda eco.PNG" alt="">
+    </article>
+
+    <!-- Futuro carroselzinho (do bootstrap, so falta achar ele) -->
+    <section class="moreSelling">
+      <hr class="rela">
+      <h1 class="frufru">Mais Vendidos</h1>
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="bestSelling">
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotGojo.webp" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotGojo.webp" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMegumi.webp" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotEmo.png" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMegumi.webp" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMcDonalds.webp" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotMegumi.webp" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+          <li class="produtoBest">
+            <div class="cardImgSell"><img src="Imgs/jotPintura.png" alt="img" draggable="false"></div>
+            <h2>Produto</h2>
+            <span>A venda</span>
+          </li>
+
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+
+      </div>
+
+      <hr>
+    </section>
+    <article class="ad">
+      <img class="reciclar" src="./Imgs/anuncio.png" alt="">
+    </article>
+
+    <section>
+      <section class="mobile">
+        <h1 class="mais-mobile">Veja Mais</h1>
+        <div class="vejamais1">
+          <img src="/Imgs/produtos img/tabua.png" alt="">
+          <h2>Organizador de mesa em bambu</h2>
+          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Imgs/ranking2.png" alt=""></p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="vejamais1">
+          <img src="/Imgs/produtos img/tabua.png" alt="">
+          <h2>Organizador de mesa em bambu</h2>
+          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Imgs/ranking2.png" alt=""></p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="vejamais1 ultimo">
+          <img src="/Imgs/produtos img/tabua.png" alt="">
+          <h2>Organizador de mesa em bambu</h2>
+          <p class="preco1">R$ 35,50 <img style="width: 80px; margin-left: 90px;" src="/Imgs/ranking2.png" alt=""></p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+
+      </section>
+      <p class="offerday">Veja mais...</p>
+      <div class="seeMore">
+        <div class="vejamais" id="produtoSelecionado">
+          <img src="/Imgs/produtos img/caderno1.png" alt="">
+          <h2 id="titulo-principal">Caderno eco em papel pedra</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Caderno eco em papel pedra</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco1">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade">1</span>
+              <img class="quantidade1" id="quantidade-mais" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado1">
+          <img src="/Imgs/produtos img/caderno2.png" alt="">
+          <h2 id="titulo-principal1">Kit caderno kraft reciclagem</h2>
+          <div class="informacoes">
+            <h2 class="titulo" id="titulo-principal">Kit caderno kraft reciclagem</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco1">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos1" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade1">1</span>
+              <img class="quantidade1" id="quantidade-mais1" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho1">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado2">
+          <img src="/Imgs/produtos img/caderno3.png" alt="">
+          <h2>Caderneta reciclada</h2>
+          <div class="informacoes">
+            <h2 class="titulo" id="titulo-principal">Caderneta reciclada</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco2">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos2" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade2">1</span>
+              <img class="quantidade1" id="quantidade-mais2" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho2">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado3">
+          <img src="/Imgs/produtos img/creme1.png" alt="">
+          <h2 id="titulo-principal">Hidratante zero</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Hidratante zero</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco3">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos3" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade3">1</span>
+              <img class="quantidade1" id="quantidade-mais3" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho3">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado4">
+          <img src="/Imgs/produtos img/esponja.png" alt="">
+          <h2 id="titulo-principal">Bucha vegetal</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Bucha vegetal</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco4">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos4" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade4">1</span>
+              <img class="quantidade1" id="quantidade-mais4" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho4">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado5">
+          <img src="/Imgs/produtos img/sabonete1.png" alt="">
+          <h2 id="titulo-principal">Sabonete argila vermelha</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Sabonete argila vermelha</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco5">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos5" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade5">1</span>
+              <img class="quantidade1" id="quantidade-mais5" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho5">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado6">
+          <img src="/Imgs/produtos img/pente.png" alt="">
+          <h2 id="titulo-principal">Escova de cabelo bambu</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Escova de cabelo bambu</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco6">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos6" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade6">1</span>
+              <img class="quantidade1" id="quantidade-mais6" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho6">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado7">
+          <img src="/Imgs/produtos img/faca.png" alt="">
+          <h2 id="titulo-principal">Kit churrasqueiro ecológico</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Kit churrasqueiro ecológico</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco7">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos7" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade7">1</span>
+              <img class="quantidade1" id="quantidade-mais7" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho7">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado8">
+          <img src="/Imgs/produtos img/tabua.png" alt="">
+          <h2 id="titulo-principal">Organizador de mesa em bambu</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Organizador de mesa em bambu</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco8">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos8" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade8">1</span>
+              <img class="quantidade1" id="quantidade-mais8" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho8">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="vejamais" id="produtoSelecionado9">
+          <img src="/Imgs/produtos img/tesoura2.png" alt="">
+          <h2 id="titulo-principal">Kit jardinagem maleta C/8 peças</h2>
+          <div class="informacoes">
+            <h2 class="titulo">Kit jardinagem maleta C/8 peças</h2>
+            <p>O caderno ecológico em papel pedra é feito de pó de pedra calcária e resina, sendo reciclável, impermeável e resistente a rasgos. Sustentável, ele consome menos água e energia na produção, oferecendo uma escrita suave e de alta qualidade.</p>
+            <div class="produto-preco">
+              <p class="preco1" id="preco9">R$ 35.50</p>
+              <img src="/Imgs/ranking2.png" alt="">
+            </div>
+            <div class="quantidade">
+              <img class="quantidade1" id="quantidade-menos9" src="/Imgs/minus-branco.png" alt="">
+              <span id="quantidade9">1</span>
+              <img class="quantidade1" id="quantidade-mais9" src="/Imgs/plus-branco.png" alt="">
+            </div>
+            <button id="adicionar-carrinho9">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="tfooter">
+        <h1> <img src="/Imgs/icone verde.png" alt="">O FUTURO É VERDE <img src="/Imgs/icone verde.png" alt=""></h1>
+      </div>
+      <hr>
+      <div class="amostras">
+        <ul>
+          <li>
+            <div>
+              <img src="/Imgs/cartãoo.png" alt="">
+              <h2>Escolha como pagar</h2>
+              <p>Com o Mercado Pago, você paga com cartão,<br> boleto ou Pix. Você também pode pagar em <br> até 12x no boleto com o Mercado Crédito.</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <img src="/Imgs/caixa.png" alt="">
+              <h2>Frete grátis a partir de R$ 79</h2>
+              <p>Ao se cadastrar no EcoArt, você tem frete <br> grátis em milhares de produtos.</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <img src="/Imgs/segurança.png" alt="">
+              <h2>Segurança, do início ao fim</h2>
+              <p>Você não gostou do que comprou? Devolva! <br> No Mercado Livre não há nada que você não possa <br> fazer, porque você está sempre protegido.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="vinicio">
+      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <footer class="footer">
+      <div class="extras">
+        <ul>
+          <li>
+            <div>
+              <h2>Conheça-nos</h2>
+              <p>Sobre a EcoArt</p>
+              <p>Informações Corporativas </p>
+              <p>Acessibilidade</p>
+              <p>Sustentabilidade</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <h2>Contato</h2>
+              <p>Soluçao de Problemas</p>
+              <p>Segurança</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <h2>Deixe-nos ajudar você</h2>
+              <p>Sua Conta</p>
+              <p>Frete e prazo de entrega</p>
+              <p>Devoluções e reembolso</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <h2>Pagamento</h2>
+              <p>Meios de Pagamento</p>
+              <p>Cartão com Pontos</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <hr class="line">
+      <div class="credits">
+        <div class="cop">
+          <p>© Copyright 2024 Green People. All Rights Reserved.</p>
+        </div>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+        <img class="pagamnt" src="/Imgs/pagamentos.png" alt="">
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="./css/carrossel.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./Js/carrossel.js"></script>
+    <script src="./Js/script.js"></script>
+    <script src="/Js/bestSelling.js"></script>
+  </div>
+</body>
+
+</html>

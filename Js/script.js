@@ -5,7 +5,7 @@ var showSidebar = false;
 
 // Rotas
 // function login() {
-//   window.location.href = "/projeto/index.html";
+//   window.location.href = "/index.html";
 // } 
 exibeOcultaMsgCarrinhoVazio()
 
@@ -22,36 +22,36 @@ else{
 }
 // Logo
 function logo() {
-  window.location.href = "/projeto/index.html";
+  window.location.href = "/index.html";
 }
 
 function logout(){
-  window.location.href = "/projeto/telas/login.html";
+  window.location.href = "/telas/login.html";
 }
 
 function car() {
-  window.location.href = "/projeto/telas/carrinho.html";
+  window.location.href = "/telas/carrinho.html";
 }
 
 function prdPrincipal() {
-  window.location.href = "/projeto/telas/prdprincipal.html";
+  window.location.href = "/telas/prdprincipal.html";
 }
 
 // Ecobags
 function ecoBag() {
-  window.location.href = "/projeto/telas/tdsEcobag.html";
+  window.location.href = "/telas/tdsEcobag.html";
 }
 // Bioobok
 function bioBook() {
-  window.location.href = "/projeto/telas/tdsBiobook.html";
+  window.location.href = "/telas/tdsBiobook.html";
 }
 // SelfCare
 function selfcare() {
-  window.location.href = "/projeto/telas/tdsSelfcare.html";
+  window.location.href = "/telas/tdsSelfcare.html";
 }
 // Para Casa
 function paraCasa() {
-  window.location.href = "/projeto/telas/tdsCasa.html";
+  window.location.href = "/telas/tdsCasa.html";
 }
 
 
@@ -307,7 +307,7 @@ document.querySelector("#adicionar-carrinho").addEventListener("click", function
 
    let imgProdutos = document.createElement("img")
    imgProdutos.classList.add("img-produtos")
-   imgProdutos.src = "/Projeto/Imgs/produtos img/caderno1.png"
+   imgProdutos.src = "/Imgs/produtos img/caderno1.png"
 
    let produtoDescricao = document.createElement("div")
    produtoDescricao.classList.add("produto-descricao")
@@ -325,7 +325,7 @@ document.querySelector("#adicionar-carrinho").addEventListener("click", function
 
    let produtoImgDeletar = document.createElement("img")
    produtoImgDeletar.classList.add("lixeira")
-   produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+   produtoImgDeletar.src = "/Imgs/trash.png"
 
    produtoImgDeletar.addEventListener("click" , function(event){
     let $divProduto = event.target.parentElement.parentElement
@@ -347,7 +347,7 @@ document.querySelector("#adicionar-carrinho").addEventListener("click", function
    produtoLi.appendChild(produtoDiv)
 
    listaProdutos.appendChild(produtoLi)
-
+D
    exibeOcultaMsgCarrinhoVazio()
 
 })
@@ -369,7 +369,7 @@ document.querySelector("#adicionar-carrinho1").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/caderno2.png"
+  imgProdutos.src = "/Imgs/produtos img/caderno2.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -387,7 +387,7 @@ document.querySelector("#adicionar-carrinho1").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -432,7 +432,7 @@ document.querySelector("#adicionar-carrinho2").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/caderno3.png"
+  imgProdutos.src = "/Imgs/produtos img/caderno3.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -450,7 +450,7 @@ document.querySelector("#adicionar-carrinho2").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -495,7 +495,7 @@ document.querySelector("#adicionar-carrinho3").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/creme1.png"
+  imgProdutos.src = "/Imgs/produtos img/creme1.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -513,7 +513,7 @@ document.querySelector("#adicionar-carrinho3").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
    produtoImgDeletar.classList.add("lixeira")
-   produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+   produtoImgDeletar.src = "/Imgs/trash.png"
 
    produtoImgDeletar.addEventListener("click" , function(event){
     let $divProduto = event.target.parentElement.parentElement
@@ -558,7 +558,7 @@ document.querySelector("#adicionar-carrinho4").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/esponja.png"
+  imgProdutos.src = "/Imgs/produtos img/esponja.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -576,7 +576,7 @@ document.querySelector("#adicionar-carrinho4").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -621,7 +621,7 @@ document.querySelector("#adicionar-carrinho5").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/sabonete1.png"
+  imgProdutos.src = "/Imgs/produtos img/sabonete1.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -639,7 +639,7 @@ document.querySelector("#adicionar-carrinho5").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -684,7 +684,7 @@ document.querySelector("#adicionar-carrinho6").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/pente.png"
+  imgProdutos.src = "/Imgs/produtos img/pente.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -702,7 +702,7 @@ document.querySelector("#adicionar-carrinho6").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -747,7 +747,7 @@ document.querySelector("#adicionar-carrinho7").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/faca.png"
+  imgProdutos.src = "/Imgs/produtos img/faca.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -765,7 +765,7 @@ document.querySelector("#adicionar-carrinho7").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -810,7 +810,7 @@ document.querySelector("#adicionar-carrinho8").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/tabua.png"
+  imgProdutos.src = "/Imgs/produtos img/tabua.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -828,7 +828,7 @@ document.querySelector("#adicionar-carrinho8").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -873,7 +873,7 @@ document.querySelector("#adicionar-carrinho9").addEventListener("click", functio
 
   let imgProdutos = document.createElement("img")
   imgProdutos.classList.add("img-produtos")
-  imgProdutos.src = "/Projeto/Imgs/produtos img/tesoura2.png"
+  imgProdutos.src = "/Imgs/produtos img/tesoura2.png"
 
   let produtoDescricao = document.createElement("div")
   produtoDescricao.classList.add("produto-descricao")
@@ -891,7 +891,7 @@ document.querySelector("#adicionar-carrinho9").addEventListener("click", functio
 
   let produtoImgDeletar = document.createElement("img")
   produtoImgDeletar.classList.add("lixeira")
-  produtoImgDeletar.src = "/Projeto/Imgs/trash.png"
+  produtoImgDeletar.src = "/Imgs/trash.png"
 
   produtoImgDeletar.addEventListener("click" , function(event){
    let $divProduto = event.target.parentElement.parentElement
@@ -938,12 +938,12 @@ function isCarrinhoVazio(){
 
 {/* <li>
             <div class="produtos-cart">
-              <img class="img-produtos img-produtos1" src="/Projeto/Imgs/produtos img/caderno2.png" alt="">
+              <img class="img-produtos img-produtos1" src="/Imgs/produtos img/caderno2.png" alt="">
               <div class="produto-descricao produto-descricao1 ">
               <h2>Kit caderno kraft reciclagem</h2>
               <span class="produto-preco produto-preco1">R$ 35.50 x 3</span>
               <span class="produto-preco-total produto-preco-total1">R$106.50</span>
             </div>
-              <img class="lixeira lixeira1" src="/Projeto/Imgs/trash.png" alt="">
+              <img class="lixeira lixeira1" src="/Imgs/trash.png" alt="">
             </div>               
           </li> */}
