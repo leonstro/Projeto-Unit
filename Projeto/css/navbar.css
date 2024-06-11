@@ -110,6 +110,13 @@ hr {
   position: relative;
   right: 30px;
   width: 0px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown{
+  color: #fff;
+  cursor: pointer;
 }
 
 .fa-cart-shopping {
