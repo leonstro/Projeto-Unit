@@ -1,0 +1,84 @@
+body {
+  background-color: #eee;
+  height: 150vh;
+}
+
+.tresItens {
+  margin-bottom: 40px;
+}
+
+.ajuste {
+  padding-left: 45px;
+}
+
+.imgpag {
+  width: 70px;
+  padding-left: 10px;
+}
+  
+.pay {
+   justify-content: center;
+   padding-top: 200px;
+   display: grid;
+ }
+
+.formulario {
+  display: grid;
+  grid-template-columns: 800px 300px;
+  font-size: 1.35rem;
+  justify-content: center;
+}
+
+.nomes {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+}
+
+label p {
+  padding: 30px 0px 10px 0px;
+}
+
+.inputAjuste {
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+
+.pay label {
+  /* display: block; */
+}
+
+.dadospay {
+  background-color: red;
+}
+
+.displayb {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.continuar {
+  margin-left: 45px;
+  color: #fff;
+  border-radius: 7px;
+  padding: 11px;
+  background-color: green;
+}
+.formaPag {
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.envelope {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+}
+
+.tipoPag {
+  display: inline-block;
+  width: 755px;
+}
