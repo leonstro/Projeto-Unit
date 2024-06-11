@@ -354,6 +354,7 @@ color: rgb(161, 161, 161);
   width: 17px;
   margin-left: 7px;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .cart .msg-carrinho-vazio{
