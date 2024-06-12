@@ -32,10 +32,10 @@ Pensando nisso, nós do EcoArt desenvolvemos uma plataforma de ecommerce focada 
 ### Home
 ![App Screenshot](https://cdn.discordapp.com/attachments/1210013388210438224/1250279184090271744/image.png?ex=666a5cba&is=66690b3a&hm=c1573a7f65ee9bee7bb6dee5cd43ada3428334be158cd5a6f048c108def61d14&)
 
-### Categorias
+### Ofertas do dia
 ![App Screenshot](https://cdn.discordapp.com/attachments/1210013388210438224/1250279493747347456/image.png?ex=666a5d04&is=66690b84&hm=1e2bd2f3584a939f2ad21f76f33a9376387eca4f1eaae536f40164d3a660dd21&)
 
-### Ofertas do dia
+### Categorias
 ![App Screenshot](https://cdn.discordapp.com/attachments/1210013388210438224/1250279344157364324/image.png?ex=666a5ce0&is=66690b60&hm=a1dc0358ca7f643a62e37892ba3599db6b5a3fbd1b1c44965b175b6794bae260&)
 
 ### Produtos
