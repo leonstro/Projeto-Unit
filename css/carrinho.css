@@ -24,7 +24,8 @@ main .page-title {
   color: #567D4C;
 }
 main .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 700px 300px;
 }
 main .content section {
   flex: 1;
@@ -172,6 +173,20 @@ aside > button {
   letter-spacing: 1px;
   font-size: 16px;
 }
+
+.resumo-aside {
+  padding: 150px 0px 0px 0px ;
+}
+
+.principal-carrinho {
+  margin-bottom: 600px;
+  /* padding-top: 250px; */
+}
+
+.vinicio {
+  text-align: center;
+}
+
 aside > button:hover {
   background: #28a745;
 }/*# sourceMappingURL=carrinho.css.map */

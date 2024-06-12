@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produto Principal</title>
-  <link rel="icon" href="/Projeto/Imgs/icone-nav.ico">
+  <link rel="icon" href="/Imgs/icone-nav.ico">
   <link rel="stylesheet" href="../css/all.css">
   <script src="https://kit.fontawesome.com/3ba4c661d9.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="/Projeto/css/PrdPrincipal.css"> -->
+  <!-- <link rel="stylesheet" href="/css/PrdPrincipal.css"> -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="/Projeto/Js/PrdPrincipal.js" defer></script>
+  <script src="/Js/PrdPrincipal.js" defer></script>
 </head>
 
 <body>
@@ -21,35 +21,63 @@
       </svg>
     </button>
     <div class="logo">
-      <img class="ecoart" src="/Projeto/Imgs/logo.png"  alt="logo" onclick="logo()"/>
+      <img class="ecoart" src="/Imgs/logo.png" alt="logo" onclick="logo()" />
+      <img class="ecoart-mobile" src="./Imgs/ecooo-mobile.png" alt="">
     </div>
     <div class="navegar">
       <a href="#" class="ativar">Home</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-      <a class="quem" href="#">Quem⠀somos</a> <!-- aq tem um caractere invisível -->
     </div>
+     <div class="search">
+      <div class="buscar-box">
+        <div class="lupa-buscar">
+            <i class="bi bi-search"></i>
+        </div><!--lupa-buscar-->
+  
+        <div class="input-buscar">
+            <input type="text" name="" id="" placeholder="Faça uma busca">
+        </div><!--input-buscar-->
+  
+        <div class="btn-fechar">
+            <i class="bi bi-x-circle"></i>
+        </div><!--btn-fechar-->
+    </div><!--buscar-box-->
+     </div>
 
-    <div class="container-fluid">
+     <div class="container-fluid">
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="submit" style="background-color: #A1D1A3;">Search</button>
       </form>
     </div>
+     
 
     <div class="navegar3">
-      <a href="#" onclick="car()"><i class="fa-solid fa-cart-shopping"></i></a>
+      <div  class="icone-carrinho-container">
+        <a id="abrir-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="icone-carrinho-contador">4</div>
+      </div>
       <span class="dropdown">
-        <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá,⠀Leon</i></a>
+        <a><i><i class="fa-solid fa-circle-user"></i>Entrar/Cadastrar</i></a>
       </span>
+      <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <button class="meu" onclick="car()">Meu Carrinho</button>
+        <div class="prd-cart">
+          <p class="msg-carrinho-vazio  carrinho-vazio" id="msg-carrinho-vazio">Seu Carrinho está vazio</p>
+          <ul>
+
+          </ul>
+        </div>
+      </div>
     </div>
+
     <div class="menu">
       <ul>
         <li class="profile">
           <a href="#"><i class="fa-solid fa-circle-user user-profile"></i>
             </ion-icon>
           </a>
-          <p>Leon de França</p>
+          <p>Entrar/Cadastrar</p>
         </li>
         <hr>
         <li>
@@ -85,9 +113,15 @@
         </svg>
       </button>
       <a href="#" class="ativar">Home</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-      <a href="#">Quem somos</a>
+      <a href="#">Carrinho</a>
+      <a href="#">Para sua casa</a>
+      <a href="#">Self Care</a>
+      <a href="#">BioBooks</a>
+      <a href="#">Ecobags</a>
+      <a href="#">Perfil</a>
+      <a class="logout" href="#">logout</a>
+
+
     </div>
     <p></p>
   </nav>
@@ -97,23 +131,23 @@
           <div class="left-side">
             <div class="itens3">
               <div id="container" class="select-imagens">
-                <img id="img" src="/Projeto/Imgs/ecobag borboletab.jpg" alt="">
+                <img id="img" src="/Imgs/ecobag borboletab.jpg" alt="">
               </div>
               <div class="thumbnails">
                 <div class="thumbnail">
-                  <img src="/Projeto/Imgs/ecobag borboletab.jpg" alt="">
+                  <img src="/Imgs/ecobag borboletab.jpg" alt="">
                 </div>
 
                 <div class="thumbnail">
-                  <img src="/Projeto/Imgs/borboleta2.jpg" alt="">
+                  <img src="/Imgs/borboleta2.jpg" alt="">
                 </div>
 
                 <div class="thumbnail">
-                  <img src="/Projeto/Imgs/borboleta3.jpg" alt="">
+                  <img src="/Imgs/borboleta3.jpg" alt="">
                 </div>
 
                 <div class="thumbnail">
-                  <img src="/Projeto/Imgs/borboleta5.jpg" alt="">
+                  <img src="/Imgs/borboleta5.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -121,9 +155,9 @@
           </div>
           <div class="right-side">
             <div class="contennt">
-              <img class="ranking" src="/Projeto/Imgs/ranking.png" alt="">
+              <img class="ranking" src="/Imgs/ranking.png" alt="">
               <h6>EcoArt</h6>
-              <h1>Ecobag Mudanças Borboletas</h1>
+              <h1>Ecobag Mudanças</h1>
               <p style="font-size: 1rem;">Esta ecobag, com 35x35 cm e alça de 30 cm, é mais do que uma sacola; é uma afirmação de estilo consciente e sustentável. Feita de algodão cru, é ecológica, duradoura, macia e resistente, garantindo conforto e confiança ao carregar suas coisas, reforçando nosso compromisso com materiais sustentáveis e minimizando o impacto ambiental.</p>
               <span style="font-size: 0.9rem;" class="off">R$160,00 </span>
               <div class="prices2">
@@ -143,7 +177,7 @@
                     <button><i class='bx bx-plus botao'></i></button>
                   </div>
                 </div>
-                <a href="#" class="button5"><img src="/Projeto/Imgs/carrinhoo.png" alt="">Adicionar ao Carrinho</a>
+                <a href="#" class="button5" onclick="car()"><img src="/Imgs/carrinhoo.png" alt="">Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>          
@@ -151,9 +185,9 @@
         <section class="comentarios">
           <div class="nota">
             <h2 class="notas">Avaliações de Clientes</h2>
-            <span class="rank3"><img class="rank" src="/Projeto/Imgs/ranking2.png" alt=""> <p>4.0 de 5</p></span>
+            <span class="rank3"><img class="rank" src="/Imgs/ranking2.png" alt=""> <p>4.0 de 5</p></span>
             <h6>649 avaliações global</h6>
-            <img class="clientes" src="/Projeto/Imgs/avaliacao.png" alt="">
+            <img class="clientes" src="/Imgs/avaliacao.png" alt="">
           </div>
           <div class="coments">
             <h6 class="experiencia">Nos conte como foi sua experiência com o nosso produto</h6>
@@ -163,33 +197,33 @@
             rows="2"
             placeholder="Escreva uma avaliação "
           ></textarea>
-          <span><img class="rank2" src="/Projeto/Imgs/rank2.png" alt=""></span>
+          <span><img class="rank2" src="/Imgs/rank2.png" alt=""></span>
           <hr>
           <h2 class="principais">Principais avaliações do Brasil</h2>
           <div class="comentario">
             <h6>Natalia Ribeiro</h6>
-            <img src="/Projeto/Imgs/ranking2.png" alt="">
+            <img src="/Imgs/ranking2.png" alt="">
             <p>Melhor compra que eu fiz este ano!!</p>
             <h6 class="avaliacao">Avaliado no Brasil em 1 de maio de 2024</h6>
             <span><button>Útil</button> <p class="denuncia">| Denunciar</p> </span>
           </div>
           <div class="comentario">
             <h6>Natalia Ribeiro</h6>
-            <img src="/Projeto/Imgs/ranking2.png" alt="">
+            <img src="/Imgs/ranking2.png" alt="">
             <p>Melhor compra que eu fiz este ano!!</p>
             <h6 class="avaliacao">Avaliado no Brasil em 1 de maio de 2024</h6>
             <span><button>Útil</button> <p class="denuncia">| Denunciar</p> </span>
           </div>
           <div class="comentario">
             <h6>Natalia Ribeiro</h6>
-            <img src="/Projeto/Imgs/ranking2.png" alt="">
+            <img src="/Imgs/ranking2.png" alt="">
             <p>Melhor compra que eu fiz este ano!!</p>
             <h6 class="avaliacao">Avaliado no Brasil em 1 de maio de 2024</h6>
             <span><button>Útil</button> <p class="denuncia">| Denunciar</p> </span>
           </div>
           <div class="comentario">
             <h6>Natalia Ribeiro</h6>
-            <img src="/Projeto/Imgs/ranking2.png" alt="">
+            <img src="/Imgs/ranking2.png" alt="">
             <p>Melhor compra que eu fiz este ano!!</p>
             <h6 class="avaliacao">Avaliado no Brasil em 1 de maio de 2024</h6>
             <span><button>Útil</button> <p class="denuncia">| Denunciar</p> </span>
@@ -200,14 +234,14 @@
        
         <footer class="footer">
           <div class="tfooter">
-            <h1> <img src="/Projeto/Imgs/icone verde.png" alt="">O FUTURO É VERDE <img src="/Projeto/Imgs/icone verde.png" alt=""></h1>
+            <h1> <img src="/Imgs/icone verde.png" alt="">O FUTURO É VERDE <img src="/Imgs/icone verde.png" alt=""></h1>
           </div>
           <hr>
           <div class="amostras">
             <ul>
               <li>
                 <div>
-                  <img src="/Projeto/Imgs/cartãoo.png" alt="">
+                  <img src="/Imgs/cartãoo.png" alt="">
                   <h2>Escolha como pagar</h2>
                   <p>Com o Mercado Pago, você paga com cartão,<br> boleto ou Pix. Você também pode pagar em <br> até 12x no boleto com o Mercado Crédito.</p>
                 </div>
@@ -216,7 +250,7 @@
             <ul>
               <li>
                 <div>
-                  <img src="/Projeto/Imgs/caixa.png" alt="">
+                  <img src="/Imgs/caixa.png" alt="">
                   <h2>Frete grátis a partir de R$ 79</h2>
                   <p>Ao se cadastrar no EcoArt, você tem frete <br> grátis em milhares de produtos.</p>
                 </div>
@@ -225,7 +259,7 @@
             <ul>
               <li>
                 <div>
-                  <img src="/Projeto/Imgs/segurança.png" alt="">
+                  <img src="/Imgs/segurança.png" alt="">
                   <h2>Segurança, do início ao fim</h2>
                   <p>Você não gostou do que comprou? Devolva! <br> No Mercado Livre não há nada que você não possa <br> fazer, porque você está sempre protegido.</p>
                 </div>
@@ -285,7 +319,7 @@
             </div>
             <p>Privacy Policy</p>
             <p>Terms & Conditions</p>
-            <img src="/Projeto/Imgs/pagamentos.png" alt="">
+            <img src="/Imgs/pagamentos.png" alt="">
           </div>
         </footer>
       </section>

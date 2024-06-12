@@ -5,7 +5,7 @@
   --dark-color-lighten:#733F2F;
 
   --body-font:'Poppins', sans-serif;
-  --h1-font-size:1.2rem;
+  --h1-font-size:1.1rem;
   --h2-font-size:1.25rem;
   --normal-font-size:2rem;
   --small-font-size:0.99rem;
@@ -41,15 +41,14 @@ margin-top: 35px;
   justify-content: center;
   align-items: center;
   background-color: var(--dark-color-lighten);
+  
 }
 
 .cardGerais {
-  width: 290px;
+  width: 260px;
   height: 355px ;
-  border: solid #567D4C;
   border-radius: 1rem;
-  border-width: 1px;
-  padding: 2.5rem 3rem  ;
+  padding: 2rem 3rem  ;
   color:black ;
   overflow: hidden;
   

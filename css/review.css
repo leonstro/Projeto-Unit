@@ -13,7 +13,7 @@ body {
 }
 
 .ajuste {
-  padding-left: 15px;
+  /* padding-left: 15px; */
 }
 
 .imgpag {
@@ -23,9 +23,10 @@ body {
 
 .pay {
   justify-content: center;
-  padding-top: 50px;
   display: grid;
+  padding-top: 20px;
   padding-bottom: 75px;
+  gap:20px;
 }
 
 .formulario {
@@ -33,6 +34,10 @@ body {
   grid-template-columns: 600px 200px;
   font-size: 1.35rem;
   justify-content: center;
+}
+
+.primeiroLado {
+  width: 565px;
 }
 
 .nomes {
@@ -59,6 +64,7 @@ label p {
   display: grid;
   justify-content: center;
   background-color: #fff;
+  
   /* gap: 100px; */
 }
 
@@ -78,6 +84,19 @@ label p {
   border-radius: 7px;
   border: 1px solid gray;
   margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.envelope2 {
+  background-color: #fff;
+  padding: 20px 0px 20px 20px ;
+  border-radius: 7px;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+  max-width: 565px;
 }
 
 .envelope:last-child {
@@ -129,7 +148,7 @@ label p {
   font-size: 1rem;
 }
 
-.continuar {
+.finalizar {
   color: #fff;
   background-color: #567D4C;
   padding: 8px;
@@ -145,4 +164,46 @@ label p {
 
 .continuar:hover {
   background-color: #416738;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: 50px 400px;
+}
+
+.produtoFinal {
+  display: grid;
+  grid-template-columns: 50px 200px; 
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+  gap: 30px;
+}
+
+.cartao-final {
+  display: grid;
+  grid-template-columns: 80px 300px; 
+  font-size: 0.9rem;
+  max-width: 300px;
+}
+
+.nub {
+  padding-right: 0px 0px 0px 0px;  
+}
+
+.tt-p {
+  padding-bottom: 30px;
+}
+
+.categoria-pf {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: start;
+  align-items: start;
+  
+}
+
+
+.pf {
+  max-width: 50px;
+  margin-bottom: 10px;
 }

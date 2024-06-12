@@ -5,7 +5,21 @@
   .mobile{
     display: none;
   }
+  .ecoart-mobile{
+    display: none;
+  }
 
+  .search{
+    display: none;
+  }
+  
+
+}
+.ecoart-mobile{
+  width: 40px;
+  position: relative;
+  left: 10px;
+  margin-right: 10px;
 }
 .cards-mobile {
   margin-top: 43px;
@@ -118,4 +132,57 @@
 .ultimo{
   margin-bottom: 100px;
 }
+
+/* barra de pesquisa */
+.buscar-box.ativar{
+  width: 400px;
+}
+
+.buscar-box {
+  height: 46px;
+  background-color: #567D4C;
+}
+
+.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
+  min-width: 80px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.buscar-box .btn-fechar i{
+  font-size: 20px;
+  margin-left: 0px;
+  color: #fff;
+  position: relative;
+  right: 28px;
+}
+
+.buscar-box .lupa-buscar i{
+  font-size: 35px;
+  color: #fff;
+}
+
+.buscar-box .input-buscar{
+  position: absolute;
+  left: 80px;
+  width: calc(100% - 120px);
+  height: 100%;
+  line-height: 80px;
+  
+}
+
+.buscar-box .input-buscar input{
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  background-color: #82aa78;
+  color: #fff;
+  align-self: center;
+}
+
+
+
 

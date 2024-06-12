@@ -13,8 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1900px;
-  height: 300px;
+  width: 1495px;
+  height: 252px;
   z-index: -2;
 }
 
@@ -46,7 +46,7 @@
   opacity: 0;
   transition: opacity 0.7s;
   position: absolute;
-  width: 1864px;
+  width: 1490px;
   z-index: -2;
 }
 
@@ -79,5 +79,5 @@
 }
 
 .slider {
-  height: 600px;
+  height: 500px;
 }

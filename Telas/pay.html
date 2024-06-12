@@ -5,54 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagamento</title>
   <link rel="stylesheet" href="../css/all.css">
+  <script src="https://kit.fontawesome.com/3ba4c661d9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/pay.css">
 </head>
 <body>
 
-  <nav class="header" id="header" >
+  <nav class="header" id="header">
     <button onclick="toggleSidebar()" class="botao">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
       </svg>
     </button>
     <div class="logo">
-      <img class="ecoart" src="/Projeto/Imgs/logo.png"  alt="logo" onclick="logo()"/>
+      <img class="ecoart" src="/Imgs/logo.png" alt="logo" onclick="logo()" />
+      <img class="ecoart-mobile" src="./Imgs/ecooo-mobile.png" alt="">
     </div>
     <div class="navegar">
       <a href="#" class="ativar">Home</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-      <a class="quem" href="#">Quem⠀somos</a> <!-- aq tem um caractere invisível -->
     </div>
+     <div class="search">
+      <div class="buscar-box">
+        <div class="lupa-buscar">
+            <i class="bi bi-search"></i>
+        </div><!--lupa-buscar-->
+  
+        <div class="input-buscar">
+            <input type="text" name="" id="" placeholder="Faça uma busca">
+        </div><!--input-buscar-->
+  
+        <div class="btn-fechar">
+            <i class="bi bi-x-circle"></i>
+        </div><!--btn-fechar-->
+    </div><!--buscar-box-->
+     </div>
 
-    <div class="container-fluid">
+     <div class="container-fluid">
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="submit" style="background-color: #A1D1A3;">Search</button>
       </form>
     </div>
+     
 
     <div class="navegar3">
-      <a href="#" id="abrir-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+      <div  class="icone-carrinho-container">
+        <a id="abrir-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="icone-carrinho-contador">4</div>
+      </div>
       <span class="dropdown">
-        <a href="#"><i><i class="fa-solid fa-circle-user"></i>Olá,⠀Leon</i></a>
+        <a><i><i class="fa-solid fa-circle-user"></i>Entrar/Cadastrar</i></a>
       </span>
       <div class="cart" id="cart">
         <h2>Cart</h2>
+        <button class="meu" onclick="car()">Meu Carrinho</button>
         <div class="prd-cart">
-        <p>Seu Carrinho está vazio</p>
-      </div>
+          <p class="msg-carrinho-vazio  carrinho-vazio" id="msg-carrinho-vazio">Seu Carrinho está vazio</p>
+          <ul>
+
+          </ul>
+        </div>
       </div>
     </div>
-    
+
     <div class="menu">
       <ul>
         <li class="profile">
           <a href="#"><i class="fa-solid fa-circle-user user-profile"></i>
             </ion-icon>
           </a>
-          <p>Leon de França</p>
+          <p>Entrar/Cadastrar</p>
         </li>
         <hr>
         <li>
@@ -88,9 +110,15 @@
         </svg>
       </button>
       <a href="#" class="ativar">Home</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-      <a href="#">Quem somos</a>
+      <a href="#">Carrinho</a>
+      <a href="#">Para sua casa</a>
+      <a href="#">Self Care</a>
+      <a href="#">BioBooks</a>
+      <a href="#">Ecobags</a>
+      <a href="#">Perfil</a>
+      <a class="logout" href="#">logout</a>
+
+
     </div>
     <p></p>
   </nav>
@@ -99,7 +127,8 @@
   <section class="pay">
     <div class="formulario">
       <!-- Primeiro lado -->
-    <div class="primeiroLado">
+      <div class="primeiroLado">
+      <p class="titulo-pag ajuste">Preencha seus dados</p>
       <div class="nomes">
         <label>
           <p>Primeiro nome</p>
@@ -134,15 +163,17 @@
           <input class="inputAjuste" type="text" name="unome" id="unome">
         </label>
       </div>
-      <label class="ajuste">
-        <p>Telefone para contato</p>
-        <input class="inputAjuste" type="text" name="complemento" id="complemento" placeholder="(00) 00000-0000">
-        </label>
+      <div class="nomes">
+        <label>
+          <p>Telefone para contato</p>
+          <input class="inputAjuste" type="text" name="complemento" id="complemento" placeholder="(00) 00000-0000">
+          </label>
         
-        <label class=" ajuste">
-          <p>Complemento</p>
-          <input class="inputAjuste" type="text" name="complemento" id="complemento" placeholder="opcional">
-        </label>
+          <label>
+            <p>Complemento</p>
+            <input class="inputAjuste" type="text" name="complemento" id="complemento" placeholder="opcional">
+          </label>
+      </div>
 
       <div class="ajuste tipoPag">
         <p class="formaPag">Forma de Pagamento</p>
@@ -166,78 +197,154 @@
             <img src="../Imgs/boleto.png" alt="" class="imgpag">
             Boleto
           </label>
-          <!-- <a href="#" class="continuar"> Continuar </a> -->
         </div>
       </div>
+      <p class="ajuste">Dados do cartão</p>
+      <div class="dadosCartao ">
+        <label class="ajuste">
+          <p>Número</p>
+          <input class="input-cartao" type="text" name="unome" id="unome">
+        </label>
+        <label class="ajuste">
+          <p>Número</p>
+          <input class="input-cartao" type="text" name="unome" id="unome">
+        </label>
+        <label class="ajuste">
+          <p>Número</p>
+          <input class="input-cartao" type="text" name="unome" id="unome">
+        </label>
+        <label class="ajuste">
+          <p>Número</p>
+          <input class="input-cartao" type="text" name="unome" id="unome">
+        </label>
+        </div>
+          <label class="ajuste">
+            <p>Data de vencimento</p>
+            <input class="input-cartao date-cartao" type="date" name="unome" id="unome">
+          </label>
+          <label class="ajuste tresItens">
+            <p>CVV</p>
+            <input class="input-cartao date-cartao" type="text" name="unome" id="unome">
+          </label>
       <!-- <a href="#" class="continuar"> Continuar </a> -->
       </div>
       
       <!-- Outro lado -->
       <div class="dadospay">
-        
+        <div class="otodo">
+          <p>Resumo da Compra</p>
+          <hr class="linhaPag">
+          <div class="doisItens">
+            <p>Produto (4)</p>
+            <p class="end">R$ 408.50</p>
+          </div>
+          <div class="doisItens">
+            <p>Frete</p>
+            <p class="end">Grátis</p>
+          </div>
+          <hr class="linhaPag">
+          <div class="doisItens">
+            <p>Valor total:</p>
+            <p class="end">R$485,36</p>
+          </div>
+        </div>
+
       </div>
       
       </section>
+      <div class="meiuca"><a href="#" class="continuar" onclick="review()">Continuar</a></div>
+
+      <footer class="footer">
+        <div class="tfooter">
+          <h1> <img src="/Imgs/icone verde.png" alt="">O FUTURO É VERDE <img src="/Imgs/icone verde.png" alt=""></h1>
+        </div>
+        <hr>
+        <div class="amostras">
+          <ul>
+            <li>
+              <div>
+                <img src="/Imgs/cartãoo.png" alt="">
+                <h2>Escolha como pagar</h2>
+                <p>Com o Mercado Pago, você paga com cartão,<br> boleto ou Pix. Você também pode pagar em <br> até 12x no boleto com o Mercado Crédito.</p>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <img src="/Imgs/caixa.png" alt="">
+                <h2>Frete grátis a partir de R$ 79</h2>
+                <p>Ao se cadastrar no EcoArt, você tem frete <br> grátis em milhares de produtos.</p>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <img src="/Imgs/segurança.png" alt="">
+                <h2>Segurança, do início ao fim</h2>
+                <p>Você não gostou do que comprou? Devolva! <br> No Mercado Livre não há nada que você não possa <br> fazer, porque você está sempre protegido.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div class="vinicio">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+      <footer class="footer">
+        <div class="extras">
+          <ul>
+            <li>
+              <div>
+                <h2>Conheça-nos</h2>
+                <p>Sobre a EcoArt</p>
+                <p>Informações Corporativas </p>
+                <p>Acessibilidade</p>
+                <p>Sustentabilidade</p>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <h2>Contato</h2>
+                <p>Soluçao de Problemas</p>
+                <p>Segurança</p>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <h2>Deixe-nos ajudar você</h2>
+                <p>Sua Conta</p>
+                <p>Frete e prazo de entrega</p>
+                <p>Devoluções e reembolso</p>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <h2>Pagamento</h2>
+                <p>Meios de Pagamento</p>
+                <p>Cartão com Pontos</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr class="line">
+        <div class="credits">
+          <div class="cop">
+            <p>© Copyright 2024 Green People. All Rights Reserved.</p>
+          </div>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          <img class="pagamnt" src="/Imgs/pagamentos.png" alt="">
+        </div>
+      </footer>
       
-      
-      
+      <script src="../Js/script.js"></script>
       </body>
       </html>
-      <!-- <div class="tresItens">
-        <label>
-          <p>nada a declarar</p>
-          <input type="text" name="pnome" id="pnome">
-        </label>
-        <label>
-          <p>nada a declarar</p>
-          <input type="text" name="pnome" id="pnome">
-        </label>
-      </div> -->
-      <!-- <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword4">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-      </div>
-      <div class="form-group">
-        <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">State</label>
-          <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign in</button> -->

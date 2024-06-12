@@ -1,7 +1,10 @@
 var header = document.getElementById('header');
 var navegar2 = document.getElementById('navegar2');
 var content = document.getElementById('content');
+
 var showSidebar = false;
+
+
 
 // Rotas
 // function login() {
@@ -20,6 +23,10 @@ else{
 }
 
 }
+
+//perfil
+
+
 // Logo
 function logo() {
   window.location.href = "/index.html";
@@ -52,6 +59,16 @@ function selfcare() {
 // Para Casa
 function paraCasa() {
   window.location.href = "/telas/tdsCasa.html";
+}
+
+// Pay 
+function pay() {
+  window.location.href = "/telas/pay.html";
+}
+
+// Pay 
+function review() {
+  window.location.href = "/telas/review.html";
 }
 
 
@@ -116,6 +133,8 @@ function closeSidebar()
     toggleSidebar();
   }
 }
+
+
 
 const perfil = document.querySelector('.dropdown');
 const menu = document.querySelector('.menu');
@@ -270,25 +289,7 @@ document.querySelector("#quantidade-menos9").addEventListener("click", function(
   
 })
 
-document.querySelector("#quantidade-menos2").addEventListener("click", function(){
-  console.log("menos")
-  let $quantidade = document.querySelector("#quantidade2")
-  let quantidadeNumber = Number($quantidade.textContent)
-  if (quantidadeNumber > 0 ) {
-    $quantidade.textContent = quantidadeNumber - 1
-  }
-  
-})
 
-document.querySelector("#quantidade-menos1").addEventListener("click", function(){
-  console.log("menos")
-  let $quantidade = document.querySelector("#quantidade1")
-  let quantidadeNumber = Number($quantidade.textContent)
-  if (quantidadeNumber > 0 ) {
-    $quantidade.textContent = quantidadeNumber - 1
-  }
-  
-})
   
 document.querySelector("#adicionar-carrinho").addEventListener("click", function(){
    console.log("adicionar...")
@@ -347,7 +348,7 @@ document.querySelector("#adicionar-carrinho").addEventListener("click", function
    produtoLi.appendChild(produtoDiv)
 
    listaProdutos.appendChild(produtoLi)
-D
+
    exibeOcultaMsgCarrinhoVazio()
 
 })
@@ -947,3 +948,6 @@ function isCarrinhoVazio(){
               <img class="lixeira lixeira1" src="/Imgs/trash.png" alt="">
             </div>               
           </li> */}
+
+
+        
