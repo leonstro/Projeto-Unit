@@ -56,7 +56,7 @@ Como aprendizado, aprendemos a melhor forma de construir um site baseando-se na 
 - [@Lucas Alves da Silva](https://github.com/Lucas7Alves)
 - [@Marcus Vinícius N. da Silva Cunha](https://github.com/leonstro)
 - [@Maria Júlia Silva Salgado](https://github.com/MariaJulia03)
-- [@Matheus José O. da S. Dantas]("https://github.com/Matheeoo)
+- [@Matheus José O. da S. Dantas](https://github.com/Matheeoo)
 - [@Felipe Vinícius](https://github.com/felipevvm)
 - [@Osmar Pereira Menezes](https://github.com/gitdooz)
 - [@Bruno de Lucas](https://github.com/leonstro)
