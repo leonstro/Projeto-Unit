@@ -33,42 +33,42 @@ function logo() {
 }
 
 function logout(){
-  window.location.href = "/telas/login.html";
+  window.location.href = "./telas/login.html";
 }
 
 function car() {
-  window.location.href = "/telas/carrinho.html";
+  window.location.href = "./telas/carrinho.html";
 }
 
 function prdPrincipal() {
-  window.location.href = "/telas/prdprincipal.html";
+  window.location.href = "./telas/prdprincipal.html";
 }
 
 // Ecobags
 function ecoBag() {
-  window.location.href = "/telas/tdsEcobag.html";
+  window.location.href = "./telas/tdsEcobag.html";
 }
 // Bioobok
 function bioBook() {
-  window.location.href = "/telas/tdsBiobook.html";
+  window.location.href = "./telas/tdsBiobook.html";
 }
 // SelfCare
 function selfcare() {
-  window.location.href = "/telas/tdsSelfcare.html";
+  window.location.href = "./telas/tdsSelfcare.html";
 }
 // Para Casa
 function paraCasa() {
-  window.location.href = "/telas/tdsCasa.html";
+  window.location.href = "./telas/tdsCasa.html";
 }
 
 // Pay 
 function pay() {
-  window.location.href = "/telas/pay.html";
+  window.location.href = "./telas/pay.html";
 }
 
 // Pay 
 function review() {
-  window.location.href = "/telas/review.html";
+  window.location.href = "./telas/review.html";
 }
 
 
