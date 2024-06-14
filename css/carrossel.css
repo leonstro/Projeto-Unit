@@ -32,6 +32,7 @@
 
   .container-slider button {
     width: 400px;
+    display: none;
   }
 
   #prev-button img {
