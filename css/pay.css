@@ -8,8 +8,15 @@ body {
 }
 
 .titulo-pag {
+  padding-right: 180px;
   padding-top: 155px;
-  font-size: 2.12rem;
+  padding-bottom: 50px;
+  font-size: 2.5rem;
+  color: #567D4C;
+}
+
+.date-vencimento {
+  margin-right: 72px;
 }
 
 .ajuste {
@@ -105,7 +112,12 @@ label p {
 
 .date-cartao {
   padding: 12px 6px;
-  margin-right: 135px;
+  /* margin-right: 135px; */
+}
+
+.dados-cartao {
+  padding-right: 70px;
+  font-size: 1.5rem;
 }
 
 .doisItens {
@@ -132,7 +144,7 @@ label p {
 .continuar {
   color: #fff;
   background-color: #567D4C;
-  padding: 8px;
+  padding: 12px;
   border-radius: 7px;
   font-size: 1rem;
   margin-bottom: 100px;
@@ -146,3 +158,15 @@ label p {
 .continuar:hover {
   background-color: #416738;
 }
+
+.primeiroLado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Repetir{
+  padding-right: 16px;
+}
+

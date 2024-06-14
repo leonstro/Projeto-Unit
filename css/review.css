@@ -9,7 +9,9 @@ body {
 
 .titulo-pag {
   padding-top: 155px;
-  font-size: 2.12rem;
+  padding-bottom: 50px;
+  font-size: 2.5rem;
+  color: #567D4C;
 }
 
 .ajuste {
@@ -151,7 +153,7 @@ label p {
 .finalizar {
   color: #fff;
   background-color: #567D4C;
-  padding: 8px;
+  padding: 12px;
   border-radius: 7px;
   font-size: 1rem;
   margin-bottom: 100px;
@@ -191,10 +193,12 @@ label p {
 }
 
 .tt-p {
+  font-size: 2rem;
   padding-bottom: 30px;
 }
 
 .categoria-pf {
+  font-size: 1.1rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-content: start;

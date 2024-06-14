@@ -128,7 +128,7 @@
     <div class="formulario">
       <!-- Primeiro lado -->
       <div class="primeiroLado">
-      <p class="titulo-pag ajuste">Preencha seus dados</p>
+      <p class="titulo-pag">Preencha seus dados</p>
       <div class="nomes">
         <label>
           <p>Primeiro nome</p>
@@ -139,10 +139,27 @@
           <input class="inputAjuste" type="text" name="unome" id="unome">
         </label>
       </div>
+      <div class="nomes Repetir">
+        <label class="displayb ajuste">
+          <p>Email</p>
+          <input class="inputAjuste" type="text" name="adrs" id="adrs" placeholder="">
+        </label>
+      <label class="displayb ajuste">
+        <p>Senha</p>
+      <input class="inputAjuste" type="text" name="adrs" id="adrs" placeholder="******">
+    </label>
+  </div>
+        <div class="nomes Repetir">
+        <label class="displayb ajuste">
+          <p>Repetir Senha</p>
+          <input class="inputAjuste " type="text" name="adrs" id="adrs" placeholder="******">
+        </label>
       <label class="displayb ajuste">
         <p>CEP</p>
-        <input class="inputAjuste" type="text" name="adrs" id="adrs" placeholder="000.000.000-00">
-      </label>
+      <input class="inputAjuste" type="text" name="adrs" id="adrs" placeholder="000.000.000-00">
+    </label>
+  </div>
+  
       <div class="nomes">
         <label>
           <p>Estado</p>
@@ -175,7 +192,7 @@
           </label>
       </div>
 
-      <div class="ajuste tipoPag">
+      <div class="tipoPag">
         <p class="formaPag">Forma de Pagamento</p>
         <div class="form-check envelope">
           <input class="form-check-input" style="margin-left: 7px;" style="margin-left: 7px;" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -199,33 +216,38 @@
           </label>
         </div>
       </div>
-      <p class="ajuste">Dados do cartão</p>
-      <div class="dadosCartao ">
-        <label class="ajuste">
-          <p>Número</p>
-          <input class="input-cartao" type="text" name="unome" id="unome">
-        </label>
-        <label class="ajuste">
-          <p>Número</p>
-          <input class="input-cartao" type="text" name="unome" id="unome">
-        </label>
-        <label class="ajuste">
-          <p>Número</p>
-          <input class="input-cartao" type="text" name="unome" id="unome">
-        </label>
-        <label class="ajuste">
-          <p>Número</p>
-          <input class="input-cartao" type="text" name="unome" id="unome">
-        </label>
-        </div>
-          <label class="ajuste">
-            <p>Data de vencimento</p>
-            <input class="input-cartao date-cartao" type="date" name="unome" id="unome">
+      <div class="dados-cartao ajuste">
+        <p>Dados do cartão</p>
+        <div class="dadosCartao">
+          <label>
+            <p>Número</p>
+            <input class="input-cartao" type="text" name="unome" id="unome">
           </label>
-          <label class="ajuste tresItens">
-            <p>CVV</p>
-            <input class="input-cartao date-cartao" type="text" name="unome" id="unome">
+          <label>
+            <p>Número</p>
+            <input class="input-cartao" type="text" name="unome" id="unome">
           </label>
+          <label>
+            <p>Número</p>
+            <input class="input-cartao" type="text" name="unome" id="unome">
+          </label>
+          <label>
+            <p>Número</p>
+            <input class="input-cartao" type="text" name="unome" id="unome">
+          </label>
+          </div>
+            <div class="tresItens">
+              <label class="date-vencimento">
+                <p>Data de vencimento</p>
+                <input class="input-cartao date-cartao" type="date" name="unome" id="unome">
+              </label>
+              <label>
+                <p>CVC</p>
+                <input class="input-cartao date-cartao" type="text" name="unome" id="unome">
+              </label>
+            </div>
+      </div>
+          <div class="meiuca"><a href="#" class="continuar" onclick="review()">Continuar</a></div>
       <!-- <a href="#" class="continuar"> Continuar </a> -->
       </div>
       
@@ -252,7 +274,7 @@
       </div>
       
       </section>
-      <div class="meiuca"><a href="#" class="continuar" onclick="review()">Continuar</a></div>
+     
 
       <footer class="footer">
         <div class="tfooter">

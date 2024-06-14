@@ -6,12 +6,12 @@
   --icon-color: #f3f3f3;
 }
 
-main{
+.bloco {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/Projeto/Imgs/fundo.jpg);
+  background-image: url(/Imgs/fundo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -152,7 +152,7 @@
   grid-template-rows: 250px 250px;
   justify-content: center;
   gap: 140px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .imagem {
@@ -458,4 +458,12 @@ ul {
   .offerday{
     display: none;
   }
+}
+
+
+.categories{
+  position: relative;
+  top: 150px;
+  font-size: 2.5rem;
+  font-weight: 500;
 }

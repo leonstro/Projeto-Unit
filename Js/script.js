@@ -932,22 +932,3 @@ else{
 function isCarrinhoVazio(){
   return document.querySelectorAll("#cart li").length == 0
 }
-
-
-
-
-
-{/* <li>
-            <div class="produtos-cart">
-              <img class="img-produtos img-produtos1" src="/Imgs/produtos img/caderno2.png" alt="">
-              <div class="produto-descricao produto-descricao1 ">
-              <h2>Kit caderno kraft reciclagem</h2>
-              <span class="produto-preco produto-preco1">R$ 35.50 x 3</span>
-              <span class="produto-preco-total produto-preco-total1">R$106.50</span>
-            </div>
-              <img class="lixeira lixeira1" src="/Imgs/trash.png" alt="">
-            </div>               
-          </li> */}
-
-
-        

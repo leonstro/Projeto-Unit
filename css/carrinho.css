@@ -180,7 +180,12 @@ aside > button {
 
 .principal-carrinho {
   margin-bottom: 600px;
-  /* padding-top: 250px; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .vinicio {

@@ -10,5 +10,5 @@ document.getElementById('open-register-mobile').addEventListener('click', moveOv
 document.getElementById('open-login-mobile').addEventListener('click', moveOverlay);
 
 function login() {
-    window.location.href = "/projeto/index.html";
+    window.location.href = "../index.html";
 } 

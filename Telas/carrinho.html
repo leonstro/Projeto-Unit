@@ -28,32 +28,32 @@
     <div class="navegar">
       <a href="#" class="ativar">Home</a>
     </div>
-     <div class="search">
+    <div class="search">
       <div class="buscar-box">
         <div class="lupa-buscar">
-            <i class="bi bi-search"></i>
+          <i class="bi bi-search"></i>
         </div><!--lupa-buscar-->
-  
-        <div class="input-buscar">
-            <input type="text" name="" id="" placeholder="Faça uma busca">
-        </div><!--input-buscar-->
-  
-        <div class="btn-fechar">
-            <i class="bi bi-x-circle"></i>
-        </div><!--btn-fechar-->
-    </div><!--buscar-box-->
-     </div>
 
-     <div class="container-fluid">
+        <div class="input-buscar">
+          <input type="text" name="" id="" placeholder="Faça uma busca">
+        </div><!--input-buscar-->
+
+        <div class="btn-fechar">
+          <i class="bi bi-x-circle"></i>
+        </div><!--btn-fechar-->
+      </div><!--buscar-box-->
+    </div>
+
+    <div class="container-fluid">
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit" style="background-color: #A1D1A3;">Search</button>
       </form>
     </div>
-     
+
 
     <div class="navegar3">
-      <div  class="icone-carrinho-container">
+      <div class="icone-carrinho-container">
         <a id="abrir-cart"><i class="fa-solid fa-cart-shopping"></i></a>
         <div class="icone-carrinho-contador">4</div>
       </div>
@@ -157,11 +157,13 @@
               <td>R$ 37.50</td>
               <td>
                 <div class="qty">
-                  <button><i class='bx bx-minus'></i></button>
-                  <span>3</span>
-                  <button><i class='bx bx-plus'></i></button>
-
-
+                  <div class="contador-menos">
+                    <button><i class='bx bx-minus'></i></button>
+                  </div>
+                  <span class="valor-atualC">3</span>
+                  <div class="contador-mais">
+                    <button><i class='bx bx-plus'></i></button>
+                  </div>
                 </div>
               </td>
               <td>R$ 112.50</td>
@@ -182,11 +184,13 @@
               <td>R$ 37.50</td>
               <td>
                 <div class="qty">
-                  <button><i class='bx bx-minus'></i></button>
-                  <span>2</span>
-                  <button><i class='bx bx-plus'></i></button>
-
-
+                  <div class="contador-menos2">
+                    <button><i class='bx bx-minus'></i></button>
+                  </div>
+                  <span class="valor-atualC2">2</span>
+                  <div class="contador-mais2">
+                    <button><i class='bx bx-plus'></i></button>
+                  </div>
                 </div>
               </td>
               <td>R$ 71.00</td>
@@ -207,11 +211,15 @@
               <td>R$ 37.50</td>
               <td>
                 <div class="qty">
-                  <button><i class='bx bx-minus'></i></button>
-                  <span>3</span>
-                  <button><i class='bx bx-plus'></i></button>
-
+                  <div class="contador-menos3">
+                    <button><i class='bx bx-minus'></i></button>
+                  </div>
+                  <span class="valor-atualC3">3</span>
+                  <div class="contador-mais3">
+                    <button><i class='bx bx-plus'></i></button>
+                  </div>
                 </div>
+              </td>
               </td>
               <td>R$ 112.50</td>
               <td><button class="remove"><i class='bx bx-x'></i></button>
@@ -231,10 +239,13 @@
               <td>R$ 37.50</td>
               <td>
                 <div class="qty">
-                  <button><i class='bx bx-minus'></i></button>
-                  <span>1</span>
-                  <button><i class='bx bx-plus'></i></button>
-
+                  <div class="contador-menos4">
+                    <button><i class='bx bx-minus'></i></button>
+                  </div>
+                  <span class="valor-atualC4">1</span>
+                  <div class="contador-mais4">
+                    <button><i class='bx bx-plus'></i></button>
+                  </div>
                 </div>
               </td>
               <td>R$ 37.50</td>
@@ -255,10 +266,13 @@
               <td>R$ 37.50</td>
               <td>
                 <div class="qty">
-                  <button><i class='bx bx-minus'></i></button>
-                  <span>1</span>
-                  <button><i class='bx bx-plus'></i></button>
-
+                  <div class="contador-menos5">
+                    <button><i class='bx bx-minus'></i></button>
+                  </div>
+                  <span class="valor-atualC5">2</span>
+                  <div class="contador-mais5">
+                    <button><i class='bx bx-plus'></i></button>
+                  </div>
                 </div>
               </td>
               <td>R$ 75.00</td>
@@ -289,63 +303,63 @@
     </div>
 
   </main>
-    <div class="vinicio">
-      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+  <div class="vinicio">
+    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <footer class="footer">
+    <div class="extras">
+      <ul>
+        <li>
+          <div>
+            <h2>Conheça-nos</h2>
+            <p>Sobre a EcoArt</p>
+            <p>Informações Corporativas </p>
+            <p>Acessibilidade</p>
+            <p>Sustentabilidade</p>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div>
+            <h2>Contato</h2>
+            <p>Soluçao de Problemas</p>
+            <p>Segurança</p>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div>
+            <h2>Deixe-nos ajudar você</h2>
+            <p>Sua Conta</p>
+            <p>Frete e prazo de entrega</p>
+            <p>Devoluções e reembolso</p>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div>
+            <h2>Pagamento</h2>
+            <p>Meios de Pagamento</p>
+            <p>Cartão com Pontos</p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <footer class="footer">
-      <div class="extras">
-        <ul>
-          <li>
-            <div>
-              <h2>Conheça-nos</h2>
-              <p>Sobre a EcoArt</p>
-              <p>Informações Corporativas </p>
-              <p>Acessibilidade</p>
-              <p>Sustentabilidade</p>
-            </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div>
-              <h2>Contato</h2>
-              <p>Soluçao de Problemas</p>
-              <p>Segurança</p>
-            </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div>
-              <h2>Deixe-nos ajudar você</h2>
-              <p>Sua Conta</p>
-              <p>Frete e prazo de entrega</p>
-              <p>Devoluções e reembolso</p>
-            </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div>
-              <h2>Pagamento</h2>
-              <p>Meios de Pagamento</p>
-              <p>Cartão com Pontos</p>
-            </div>
-          </li>
-        </ul>
+    <hr class="line">
+    <div class="credits">
+      <div class="cop">
+        <p>© Copyright 2024 Green People. All Rights Reserved.</p>
       </div>
-      <hr class="line">
-      <div class="credits">
-        <div class="cop">
-          <p>© Copyright 2024 Green People. All Rights Reserved.</p>
-        </div>
-        <p>Privacy Policy</p>
-        <p>Terms & Conditions</p>
-        <img class="pagamnt" src="/Imgs/pagamentos.png" alt="">
-      </div>
-    </footer>
-
-<script src="../Js/script.js"></script>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+      <img class="pagamnt" src="/Imgs/pagamentos.png" alt="">
+    </div>
+  </footer>
+  <script src="../Js/carrinho.js"></script>
+  <script src="../Js/script.js"></script>
 </body>
 
 </html>
