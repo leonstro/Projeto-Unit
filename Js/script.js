@@ -29,7 +29,7 @@ else{
 
 // Logo
 function logo() {
-  window.location.href = "/index.html";
+  window.location.href = "/PROJETO-UNIT/index.html";
 }
 
 function logout(){
